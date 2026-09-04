@@ -1,0 +1,9 @@
+spiffe-spire-agent-evals
+Copyright 2026 meanaverage
+
+This product includes original evaluation cases, documentation, schemas, and
+software licensed under the Apache License, Version 2.0.
+
+No third-party source tree or model-generated response prose is included.
+Third-party projects used as provenance are identified in
+THIRD_PARTY_NOTICES.md and remain under their respective licenses.
