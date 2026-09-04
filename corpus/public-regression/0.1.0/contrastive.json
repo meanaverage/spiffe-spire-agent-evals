@@ -1,0 +1,664 @@
+{
+  "$schema": "../../../schemas/case-v1.json",
+  "corpus_role": "PUBLIC_REGRESSION_V0",
+  "corpus_version": "0.1.0",
+  "description": "Product-neutral semantic twins authored before the post-ablation skill change. Each pair changes the decisive security fact, not merely wording.",
+  "scenario_count": 12,
+  "scenarios": [
+    {
+      "ground_truth": {
+        "authority": "Application call graph, exact SQL transaction boundaries, deployed datastore locking semantics, and every membership writer; SPIFFE/SPIRE owns caller identity rather than effect atomicity",
+        "evaluation_focus": [
+          "TOCTOU discrimination",
+          "effective validation boundary",
+          "claim calibration"
+        ],
+        "expected": [
+          "Reject the supplied TOCTOU claim as a demonstrated defect.",
+          "Treat the in-transaction membership read and release insert as the effective authorization/effect boundary.",
+          "Require a writer outside compatible serialization, an isolation mismatch, a bypass of the final read, or a realizable post-validation state change before reporting stale authority.",
+          "Attribute transaction atomicity to the application and datastore rather than SPIFFE/SPIRE."
+        ],
+        "expected_claims": [
+          {
+            "classification": "non_finding",
+            "concern": "stale-authorization TOCTOU"
+          }
+        ],
+        "finding_threshold": "A stale-authority finding requires a realizable path that changes relevant membership after the last effective read while the protected release still commits from stale allowed state.",
+        "must_not": [
+          "Report a vulnerability merely because the preliminary check is outside the transaction.",
+          "Claim that any transaction anywhere eliminates TOCTOU.",
+          "Claim that SPIFFE/SPIRE supplies datastore serialization."
+        ],
+        "version": "Version-independent integration reasoning; datastore behavior must be resolved for the deployed engine/version"
+      },
+      "metadata": {
+        "case_id": "holdout-toctou-serialized-reread",
+        "case_sha256": "b2a6d43b3cf8c7288221c62ed3298271559d6d99641c9d18735adec6aebf941a",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NON_FINDING"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "4a0060e0e8055da4c28206ed9fcc8003b13479bcfd136c92e77a2cc55f338f1c",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "SQL transaction pseudocode",
+        "origin_class": "DERIVED",
+        "pair_id": "toctou",
+        "paired_case_id": "holdout-toctou-stale-snapshot",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A deployment service authenticates its caller with an X.509-SVID. It first checks the caller's project membership to reject obvious failures cheaply. For the actual release it executes `BEGIN IMMEDIATE; SELECT allowed FROM memberships WHERE principal = ?;` and aborts unless that in-transaction value is true, then inserts the release row before committing. Membership grants and revocations use the same database and `BEGIN IMMEDIATE` discipline. A reviewer reports stale-authorization TOCTOU solely because the first membership check occurs before the transaction. Assess the claim and state what evidence would be necessary for a stronger conclusion."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Application call graph, membership policy, transaction boundaries, and deployed datastore semantics; SPIFFE/SPIRE owns caller identity rather than current project authority",
+        "evaluation_focus": [
+          "true invariant retention",
+          "TOCTOU",
+          "exploitability calibration"
+        ],
+        "expected": [
+          "Report an application authorization invariant violation because the mutation can consume authority that is stale relative to the required decision point.",
+          "Describe the harmful interleaving: allowed is read, revocation commits, and the release still commits from the cached value.",
+          "Keep exploitability unproven because actor control over the interleaving or revocation is not established.",
+          "Attribute the property to application/datastore integration rather than SPIFFE/SPIRE."
+        ],
+        "expected_claims": [
+          {
+            "classification": "invariant_violation",
+            "concern": "stale-authorization TOCTOU"
+          }
+        ],
+        "finding_threshold": "The source-level interleaving establishes the stale-authority invariant failure; exploitation additionally requires a reachable actor-controlled path and protected consequence.",
+        "must_not": [
+          "Dismiss the invariant violation merely because attacker scheduling is unproven.",
+          "Call this a demonstrated bypass without concrete actor control and an observed denied effect.",
+          "Claim that the SVID prevents stale application authorization."
+        ],
+        "version": "Version-independent integration reasoning; datastore behavior must be resolved for the deployed engine/version"
+      },
+      "metadata": {
+        "case_id": "holdout-toctou-stale-snapshot",
+        "case_sha256": "b155851310c42c3f5e5d6ec2f047d207611a3656572c6b95fb84f498ecfa86bc",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "INVARIANT_VIOLATION"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "8c015c4a8bafc07c5cd4ffc453bf300ba6e1295c1bd7291093a4f7b146759606",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "SQL transaction pseudocode",
+        "origin_class": "DERIVED",
+        "pair_id": "toctou",
+        "paired_case_id": "holdout-toctou-serialized-reread",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A deployment service authenticates its caller with an X.509-SVID. It reads the caller's project membership into `allowed` before opening a transaction. For the actual release it executes `BEGIN; INSERT INTO releases ...; COMMIT` using that cached boolean and never re-reads membership. Membership revocation commits independently and can occur after `allowed` is read but before the release insert. The policy requires every release to use current membership, but no evidence shows an attacker can schedule or trigger a revocation. Assess the claim and state how strongly it may be reported."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Exact decoder behavior, accepted command language, commitment construction, receipt consumption, and effect tests; SPIFFE/SPIRE owns principal authentication",
+        "evaluation_focus": [
+          "request-language discrimination",
+          "commitment semantics",
+          "non-finding precision"
+        ],
+        "expected": [
+          "Reject a demonstrated request-binding defect on the supplied facts.",
+          "Explain that the accepted request language contains one canonical security meaning, so the constant domain tag is unambiguous for this operation.",
+          "Require two security-distinct accepted meanings sharing the commitment or evidence reuse for uncommitted semantics before reporting a binding violation.",
+          "Keep request commitment and receipt consumption at the relying-application boundary."
+        ],
+        "expected_claims": [
+          {
+            "classification": "non_finding",
+            "concern": "constant request commitment"
+          }
+        ],
+        "finding_threshold": "A binding finding requires multiple security-distinct accepted meanings sharing authorization or evidence that authorized material can be applied to uncommitted semantics.",
+        "must_not": [
+          "Claim that constant commitments are generally safe.",
+          "Report a binding vulnerability merely because the input is constant.",
+          "Attribute application request semantics to SPIFFE/SPIRE."
+        ],
+        "version": "Version-independent integration reasoning; decoder behavior is implementation/version specific"
+      },
+      "metadata": {
+        "case_id": "holdout-commitment-single-command",
+        "case_sha256": "4f09813d7ab23e545fd0e1d97c1623edaa54754d786d38c3e1738337d2b02fa3",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NON_FINDING"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "50f6a0483a93a709a24ec9c4347dac5d2ddef0abe58764ea7a7143350a1d00b1",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Rust",
+        "origin_class": "DERIVED",
+        "pair_id": "request-commitment",
+        "paired_case_id": "holdout-commitment-two-commands",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Rust RPC accepts a zero-field enum command `AcknowledgeOwnAlert`. Deserialization rejects every other variant, unknown field, and trailing byte before authorization. The receipt is committed under the constant domain tag `ack-v1`, is consumed once, and the effect can only acknowledge the authenticated principal's one current alert. A reviewer reports an unbound-request vulnerability because the commitment input is constant. Assess the claim and the evidence threshold."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Accepted command language, exact commitment preimage, receipt issuance/consumer comparison, dispatch, and effect authorization; SPIFFE/SPIRE owns principal authentication",
+        "evaluation_focus": [
+          "true binding invariant",
+          "semantic substitution",
+          "exploitability calibration"
+        ],
+        "expected": [
+          "Report a request-binding invariant violation because two security-distinct accepted meanings share one authorization commitment.",
+          "Identify the own-alert versus team-alert semantic substitution at the consumer boundary.",
+          "Keep exploitability unproven because attacker control, team context, and an unauthorized effect are not established.",
+          "Attribute request commitment to the relying application rather than SPIFFE/SPIRE."
+        ],
+        "expected_claims": [
+          {
+            "classification": "invariant_violation",
+            "concern": "shared request commitment"
+          }
+        ],
+        "finding_threshold": "The two accepted meanings and shared check establish the binding invariant failure; exploitation requires a reachable unauthorized effect.",
+        "must_not": [
+          "Dismiss the binding violation because exploitation is unproven.",
+          "Call this a demonstrated bypass without a reachable unauthorized team effect.",
+          "Claim that receipt single-use alone binds the intended command meaning."
+        ],
+        "version": "Version-independent integration reasoning; decoder and receipt behavior are implementation/version specific"
+      },
+      "metadata": {
+        "case_id": "holdout-commitment-two-commands",
+        "case_sha256": "3c30b49d102b8175b2b3b6751df16c5352518fbae9422c120eaaf85d37f62438",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "INVARIANT_VIOLATION"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "440139d4f6e341035470a8c26105831549bd5e86067c3958dfd345159537775c",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Rust",
+        "origin_class": "DERIVED",
+        "pair_id": "request-commitment",
+        "paired_case_id": "holdout-commitment-single-command",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Rust RPC accepts enum commands `AcknowledgeOwnAlert` and `AcknowledgeTeamAlert { team_id }`. Both are authorized and recorded under the same constant commitment `ack-v1`; the consumer checks only that commitment before dispatching the decoded variant. Thus a receipt issued for the first command can also satisfy the commitment check for the second. No evidence shows that an attacker can obtain a suitable team context or cause an unauthorized acknowledgement. Assess the claim and how strongly it may be reported."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Request data flow, controller-owned policy lookup, final authorization, and reservation tests; SPIFFE/SPIRE authenticates workload identity",
+        "evaluation_focus": [
+          "identity versus request attributes",
+          "final policy boundary",
+          "non-finding precision"
+        ],
+        "expected": [
+          "Reject an authority defect on the supplied facts because controller-owned policy independently constrains the caller-supplied selector before effect.",
+          "State that the SVID attests identity, not the region field.",
+          "Require a bypass or mismatch in the final controller policy, or a protected effect before that check, for a finding.",
+          "Attribute region authorization to the relying application."
+        ],
+        "expected_claims": [
+          {
+            "classification": "non_finding",
+            "concern": "caller-supplied region authority"
+          }
+        ],
+        "finding_threshold": "A finding requires the untrusted region to influence protected authority without an independent policy decision or to bypass that decision.",
+        "must_not": [
+          "Treat the region as SVID-attested.",
+          "Report arbitrary authority solely because a caller supplies a selector.",
+          "Claim that caller-supplied fields are generally benign."
+        ],
+        "version": "Version-independent integration reasoning"
+      },
+      "metadata": {
+        "case_id": "holdout-attribute-controller-policy",
+        "case_sha256": "78a9448fc513701cc3bd7f53342c556a65367d9ccc8606c9ad07b02cfc2e3920",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NON_FINDING"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "cc3c4810813997738d7d0808ad34f4094ba82b746400a193d0bd804a0c9a4fcf",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Go",
+        "origin_class": "DERIVED",
+        "pair_id": "caller-supplied-attribute",
+        "paired_case_id": "holdout-attribute-direct-effect",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy",
+          "spiffe-id-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Go service authenticates a workload by SPIFFE ID. The JSON request includes `region`, which is not attested by the SVID. Before reserving capacity, the controller loads the workload's allowed regions from controller-owned policy and requires an exact match; denied regions never reach reservation. Tests show changing only the request region cannot select a region outside that policy. A reviewer claims the request field gives arbitrary region authority because it is caller supplied. Assess the claim."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Controller policy contract, request-to-backend data flow, final effect boundary, and reservation tests; SPIFFE/SPIRE authenticates workload identity",
+        "evaluation_focus": [
+          "true invariant retention",
+          "untrusted attribute flow",
+          "boundary ownership"
+        ],
+        "expected": [
+          "Report an application authorization invariant violation because an untrusted request attribute directly selects a protected effect despite a controller-owned region policy.",
+          "State that authenticating the SPIFFE ID does not attest the region value.",
+          "Keep demonstrated exploitation unproven because no out-of-policy reservation has been exercised.",
+          "Attribute the policy failure to the relying application, not SPIFFE/SPIRE."
+        ],
+        "expected_claims": [
+          {
+            "classification": "invariant_violation",
+            "concern": "caller-supplied region authority"
+          }
+        ],
+        "finding_threshold": "Direct use contrary to controller-owned policy establishes the authorization invariant failure; demonstrated bypass requires an exercised unauthorized effect.",
+        "must_not": [
+          "Dismiss the defect merely because no exploit test exists.",
+          "Claim a demonstrated bypass without an observed out-of-policy reservation and applicable actor conditions.",
+          "Describe the region as attested by the SVID."
+        ],
+        "version": "Version-independent integration reasoning"
+      },
+      "metadata": {
+        "case_id": "holdout-attribute-direct-effect",
+        "case_sha256": "6119a8d229aafe5d6641a2801b12cbb72666f6826bba4ceaf1f003bc0602160c",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "INVARIANT_VIOLATION"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "2f4255e6b5bf8ca138dcab4d56bdc3541b8158315b0e1736c1d9ff57b6f4d08f",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Go",
+        "origin_class": "DERIVED",
+        "pair_id": "caller-supplied-attribute",
+        "paired_case_id": "holdout-attribute-controller-policy",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy",
+          "spiffe-id-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Go service authenticates a workload by SPIFFE ID. Controller policy assigns each workload an allowed region, but the JSON request also includes `region`, which is not attested by the SVID. Before reserving capacity, the controller passes the request region directly to the privileged reservation backend and never loads or compares the controller-owned assignment. No test or runtime evidence shows an actual out-of-policy reservation. Assess the claim and how strongly it may be reported."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Relying-party freshness contract, signed observation-time validation, clock semantics, and consumer tests; SPIFFE/SPIRE defines SVID identity/validity rather than this detached-proof horizon",
+        "evaluation_focus": [
+          "freshness-contract discrimination",
+          "identity boundary",
+          "non-finding precision"
+        ],
+        "expected": [
+          "Reject a freshness violation for the supplied assertion because it is within the explicit relying-party horizon and the consumer enforces that horizon.",
+          "Distinguish the application's detached-evidence freshness contract from SVID validity.",
+          "Require acceptance outside 90 seconds, bypass of the age check, or a different required horizon for a finding.",
+          "Attribute detached-evidence freshness to the relying party."
+        ],
+        "expected_claims": [
+          {
+            "classification": "non_finding",
+            "concern": "detached evidence freshness"
+          }
+        ],
+        "finding_threshold": "A finding requires evidence older than the required relying-party horizon to reach authority without an equivalent freshness control.",
+        "must_not": [
+          "Report a vulnerability merely because verification is detached.",
+          "Claim that SVID validity alone proves application freshness.",
+          "Claim that detached evidence never needs replay or freshness review."
+        ],
+        "version": "Version-independent integration reasoning"
+      },
+      "metadata": {
+        "case_id": "holdout-freshness-within-contract",
+        "case_sha256": "210511311e2cd64599578d93a4127f887111cea8f52d164bb7b5f709f4b771ac",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NON_FINDING"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "8605288ff3372b548fd3d307f809c7a8b93d842c7cc19bb3fa64f49ecac95099",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Python",
+        "origin_class": "DERIVED",
+        "pair_id": "detached-evidence-freshness",
+        "paired_case_id": "holdout-freshness-outside-contract",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy",
+          "spiffe-id-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Python relying service accepts a detached identity assertion derived from a valid SVID. Its documented policy allows assertions up to 90 seconds old. The consumer validates the signed observation time against its monotonic clock, rejects future times beyond five seconds, and the supplied assertion is 40 seconds old when it reaches the authorization decision. A reviewer reports stale-evidence acceptance because verification did not occur live at the decision. Assess the claim."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Relying-party freshness policy, consumer implementation, focused age-boundary test, and authority data flow; exact client semantics only for SVID validity",
+        "evaluation_focus": [
+          "true freshness invariant",
+          "SVID validity distinction",
+          "exploitability calibration"
+        ],
+        "expected": [
+          "Report a relying-party freshness invariant violation because evidence outside the explicit 90-second horizon reaches authority.",
+          "Explain that current SVID validity does not satisfy the separate detached-evidence maximum age.",
+          "Keep exploitability and bypass unproven because capture/submission and a protected effect are not established.",
+          "Attribute the freshness contract to the relying application."
+        ],
+        "expected_claims": [
+          {
+            "classification": "invariant_violation",
+            "concern": "detached evidence freshness"
+          }
+        ],
+        "finding_threshold": "The accepted 180-second assertion establishes the freshness invariant failure; exploitation requires a reachable submission and unauthorized effect.",
+        "must_not": [
+          "Dismiss the established freshness violation because no exploit path is shown.",
+          "Call it a demonstrated replay or bypass without actor and effect evidence.",
+          "Attribute the application maximum-age policy to SPIFFE/SPIRE."
+        ],
+        "version": "Version-independent policy boundary; verify SVID mechanics against the deployed client/version"
+      },
+      "metadata": {
+        "case_id": "holdout-freshness-outside-contract",
+        "case_sha256": "9ad9d78bebc7bd20976780c46d6e74d80ea832e4019f91082f9e892483e1bf6e",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "INVARIANT_VIOLATION"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "160d1e2d24d3e180262dd0104c1f507d0e304e93ea89bc0fa6923904c3fea82e",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Python",
+        "origin_class": "DERIVED",
+        "pair_id": "detached-evidence-freshness",
+        "paired_case_id": "holdout-freshness-within-contract",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy",
+          "spiffe-id-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Python relying service accepts a detached identity assertion derived from a still-valid SVID. Its documented policy allows assertions up to 90 seconds old, but the consumer checks only SVID expiration and future clock skew. A focused test supplies a correctly signed assertion with an observation time 180 seconds in the past, and that assertion reaches the authority decision as accepted. The test does not establish how an attacker would capture or submit such an assertion to obtain a protected effect. Assess the claim and how strongly it may be reported."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Deployed SPIFFE ID parser for syntax and exact local classifier/effect path for role policy",
+        "evaluation_focus": [
+          "parser versus policy",
+          "concrete counterexample",
+          "non-finding precision"
+        ],
+        "expected": [
+          "Reject the demonstrated role-confusion claim for the supplied identifier because the exact classifier denies it.",
+          "Separate valid SPIFFE syntax from local role semantics.",
+          "Require a concrete parser-accepted identifier that the classifier maps into the privileged role contrary to policy for a finding.",
+          "Attribute path-role meaning to the relying application."
+        ],
+        "expected_claims": [
+          {
+            "classification": "non_finding",
+            "concern": "SPIFFE ID role confusion"
+          }
+        ],
+        "finding_threshold": "A role-confusion finding requires a valid identifier outside intended role language to be classified as privileged and reach an authorization-relevant decision.",
+        "must_not": [
+          "Claim that syntactic validity grants the administrator role.",
+          "Report a bypass from visual or prefix resemblance alone.",
+          "Generalize that exact classifiers eliminate every future role-confusion class."
+        ],
+        "version": "Version-independent boundary; parser behavior must be checked against the deployed client/version"
+      },
+      "metadata": {
+        "case_id": "holdout-role-exact-classifier",
+        "case_sha256": "e743d09244f7dd7f49e1987d4eb81a3c665c6adb7ed3d515acce3de02fbbddde",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NON_FINDING"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "1eae9aa99e634482fad8049fbf7bb037f4dcd9963faa2002f903755305b81d87",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "language-neutral service pseudocode",
+        "origin_class": "DERIVED",
+        "pair_id": "spiffe-id-role-classification",
+        "paired_case_id": "holdout-role-prefix-classifier",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy",
+          "spiffe-id-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A service parses `spiffe://example.test/service/admin-shadow` with its deployed compliant SPIFFE ID parser. The identifier is syntactically valid. Local policy grants the administrator role only when the parsed path segments equal exactly `[service, admin]`; the supplied identifier produces `[service, admin-shadow]` and is denied before any administrator decision. A reviewer reports role confusion because the path begins with characters resembling the administrator path. Assess the claim."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Deployed SPIFFE ID parser for syntax; exact local prefix classifier, intended role language, identity issuance, and effect path for security impact",
+        "evaluation_focus": [
+          "true classifier invariant",
+          "parser-policy composition",
+          "exploitability calibration"
+        ],
+        "expected": [
+          "Report a local role-classification invariant violation using the concrete valid identifier.",
+          "Separate the compliant parser's syntax decision from the application's erroneous prefix policy.",
+          "Keep exploitability and bypass unproven because identity issuance/control and a protected effect are not established.",
+          "Attribute role meaning to the relying application rather than SPIFFE/SPIRE."
+        ],
+        "expected_claims": [
+          {
+            "classification": "invariant_violation",
+            "concern": "SPIFFE ID role confusion"
+          }
+        ],
+        "finding_threshold": "The concrete valid identifier establishes local misclassification; exploitation requires actor control of such an identity and an unauthorized protected effect.",
+        "must_not": [
+          "Dismiss the classifier defect because the identifier is syntactically valid.",
+          "Call it a demonstrated administrator bypass without identity-control and effect evidence.",
+          "Describe compliant SPIFFE parsing as the source of the local prefix-policy defect."
+        ],
+        "version": "Version-independent boundary; parser behavior must be checked against the deployed client/version"
+      },
+      "metadata": {
+        "case_id": "holdout-role-prefix-classifier",
+        "case_sha256": "9063a0ed858d7b3c71a0b0983d72bbfdb46ec292096f20347a3ded20dcde751d",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "INVARIANT_VIOLATION"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "8be4cd50d3e6ef04af24769744f0d551431857a75175e5cb15b5c18d3932238f",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "language-neutral service pseudocode",
+        "origin_class": "DERIVED",
+        "pair_id": "spiffe-id-role-classification",
+        "paired_case_id": "holdout-role-exact-classifier",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy",
+          "spiffe-id-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A service parses `spiffe://example.test/service/admin-shadow` with its deployed compliant SPIFFE ID parser. The identifier is syntactically valid. Local policy intends to grant the administrator role only to path segments exactly `[service, admin]`, but the classifier checks whether the serialized path starts with `/service/admin`; the supplied identifier is therefore classified as administrator and reaches an authorization-relevant role decision. No evidence shows who can obtain that SPIFFE ID or exercise a protected administrator effect. Assess the claim and how strongly it may be reported."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Application state-machine policy, snapshot match logic, every writer, and protected-effect call graph; SPIFFE/SPIRE owns authenticated identity",
+        "evaluation_focus": [
+          "underclaim prevention",
+          "invariant preservation",
+          "claim lattice"
+        ],
+        "expected": [
+          "Report an established fail-closed authorization invariant violation at the snapshot boundary.",
+          "Do not erase the defect merely because normal writers make the contradiction difficult to reach.",
+          "Keep exploitability unproven because actor-controlled creation/preservation and protected effect are absent.",
+          "Attribute the state model and fail-closed policy to the relying application."
+        ],
+        "expected_claims": [
+          {
+            "classification": "invariant_violation",
+            "concern": "contradictory authoritative state"
+          }
+        ],
+        "finding_threshold": "The fail-open match arm establishes the invariant violation; stronger labels require actor-controlled reachability and an unauthorized protected effect.",
+        "must_not": [
+          "Dismiss the issue as a non-finding because exploitation is unproven.",
+          "Call it exploitable or a demonstrated bypass without reachability and effect evidence.",
+          "Describe it as a SPIRE vulnerability."
+        ],
+        "version": "Version-independent application-policy reasoning"
+      },
+      "metadata": {
+        "case_id": "holdout-contradiction-unreachable",
+        "case_sha256": "dec46f8a76a4f517edaf5da8d05e2e96d582573644968b3b928bc49673e04e39",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "INVARIANT_VIOLATION"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "e9e82ee0e765ac4f045d7367bf28c15b899941c977c8258502a54304e7943c87",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Rust state-machine pseudocode",
+        "origin_class": "DERIVED",
+        "pair_id": "invariant-versus-bypass",
+        "paired_case_id": "holdout-contradiction-demonstrated",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Rust authorization snapshot combines `Lifecycle::Active` with a separate `revoked` boolean. The policy says any revoked state must deny, but the match arm `(Active, true)` returns `Allow`. Normal writers update both fields atomically, and no actor-controlled path to create or preserve that combination has been found. No protected operation has been observed under the contradictory state. Assess the defect and choose the strongest justified claim level."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Application state policy, tenant-accessible writer sequence, snapshot implementation, and end-to-end protected-effect test; SPIFFE/SPIRE owns authenticated identity",
+        "evaluation_focus": [
+          "true bypass retention",
+          "claim lattice",
+          "boundary ownership"
+        ],
+        "expected": [
+          "Report a demonstrated application-authorization bypass.",
+          "Identify the failed fail-closed invariant, actor-controlled state creation, reachable snapshot path, protected export, and evidence that policy should deny it.",
+          "Attribute the defect to the relying application's state and authorization model rather than SPIFFE/SPIRE.",
+          "Use the demonstrated-bypass label consistently with the supplied end-to-end test evidence."
+        ],
+        "expected_claims": [
+          {
+            "classification": "demonstrated_bypass",
+            "concern": "contradictory authoritative state"
+          }
+        ],
+        "finding_threshold": "The supplied actor-controlled sequence and protected-effect test satisfy the demonstrated-bypass prerequisites.",
+        "must_not": [
+          "Understate the result as only suspected or only an invariant violation.",
+          "Claim that SPIFFE/SPIRE owns the application's lifecycle policy.",
+          "Ignore the controlled comparison showing the denied state."
+        ],
+        "version": "Version-independent application-policy reasoning"
+      },
+      "metadata": {
+        "case_id": "holdout-contradiction-demonstrated",
+        "case_sha256": "7e5056970e4292942bf2f13bc840ec111fe976ab06e72f2f067ebcd355868d57",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "DEMONSTRATED_BYPASS"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "ca29765f9e57400ef1910e327d36725ed2bb935370aa6d4aecdf82d097818045",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "Rust state-machine pseudocode",
+        "origin_class": "DERIVED",
+        "pair_id": "invariant-versus-bypass",
+        "paired_case_id": "holdout-contradiction-unreachable",
+        "provenance_ids": [
+          "synthetic-contrastive-authoring",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "CONTRASTIVE",
+        "subgroup": "CONTRASTIVE"
+      },
+      "prompt_visible": {
+        "prompt": "A Rust authorization snapshot combines `Lifecycle::Active` with a separate `revoked` boolean. The policy says any revoked state must deny, but the match arm `(Active, true)` returns `Allow`. A tenant-accessible update sequence is shown to commit that combination. An integration test using an ordinary tenant identity executes the sequence, then successfully exports a protected secret through the snapshot; the same export is denied when `(Suspended, true)` is used. Assess the defect and choose the strongest justified claim level."
+      }
+    }
+  ],
+  "subgroup": "CONTRASTIVE"
+}

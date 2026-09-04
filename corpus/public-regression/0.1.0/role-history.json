@@ -1,0 +1,11 @@
+{
+  "current_role": "PUBLIC_REGRESSION_V0",
+  "disclosure_rule": "These cases must never again support an unseen-evidence claim.",
+  "historical_corpus_sha256": "468cb60412cb74a9d2a1165b72245ab7c6f13e92b10b0a1aa9bc95e698e82b8e",
+  "historical_holdout_lock_sha256": "3c297c739cc62b100a88887309acda3b3e676f3574aef1cab2cda3f38dd21432",
+  "pair_count": 6,
+  "previous_role_at_execution": "UNRELEASED_GENERALIZATION_HOLDOUT",
+  "scenario_count": 12,
+  "status_at_execution": "unseen and locked before the tested skill edit",
+  "transition": "frozen experiment -> disclosure -> PUBLIC_REGRESSION_V0"
+}

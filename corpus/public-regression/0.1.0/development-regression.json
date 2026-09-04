@@ -1,0 +1,168 @@
+{
+  "$schema": "../../../schemas/case-v1.json",
+  "corpus_role": "PUBLIC_REGRESSION_V0",
+  "corpus_version": "0.1.0",
+  "description": "Product-neutral security-review reasoning scenarios derived from independently adjudicated real-world SPIFFE/SPIRE integration review.",
+  "scenario_count": 3,
+  "scenarios": [
+    {
+      "ground_truth": {
+        "authority": "Application call graph, datastore transaction/locking semantics, accepted-request language, commitment construction, and receipt-consumption tests; SPIFFE/SPIRE owns identity rather than application effect atomicity",
+        "evaluation_focus": [
+          "false-positive discrimination",
+          "authority-boundary tracing",
+          "finding-threshold calibration"
+        ],
+        "expected": [
+          "Reject both claims as demonstrated defects on the supplied facts.",
+          "Treat the final serialized re-read plus mutation, not the early check alone, as the relevant authority boundary.",
+          "Explain that a constant commitment can be sufficient only because the accepted request language has one canonical security meaning and every alteration is rejected before effects.",
+          "State that SPIFFE authenticates identity but does not supply application transaction atomicity, request commitment, or receipt consumption.",
+          "For TOCTOU, require a competing writer or call path that can change authority after the final effective validation while the mutation still succeeds.",
+          "For request binding, require two security-distinct accepted requests that share the commitment, or evidence that a receipt can authorize semantics it did not commit to."
+        ],
+        "finding_threshold": "A finding requires a realizable stale-authority interleaving or security-distinct accepted request semantics that can reuse an authorization commitment at an effect boundary.",
+        "must_not": [
+          "Call either concern a demonstrated vulnerability merely because the early check or constant digest exists.",
+          "Claim that SPIFFE or SPIRE guarantees application transaction isolation or payload binding.",
+          "Infer that any transaction anywhere in a call graph rules out TOCTOU.",
+          "Infer that constant digests are generally safe."
+        ],
+        "version": "Version-independent integration reasoning; verify datastore and client behavior against deployed versions"
+      },
+      "metadata": {
+        "case_id": "layered-authority-and-request-commitment",
+        "case_sha256": "b1935bbba024c78c5921c6ee42aa67a352f5c8077c7430e875dc68b0cb197792",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "PRIVATE_DERIVED",
+        "fixture_sha256": "9de2dd3e613984a18e0f6c54cd078ad113b81c0ad24387bb2e6127aa3483ee81",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "natural language / transaction and request-commitment pseudocode",
+        "origin_class": "PRIVATE_DERIVED",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "private-derived-history",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "DEVELOPMENT_REGRESSION",
+        "subgroup": "DEVELOPMENT_REGRESSION"
+      },
+      "prompt_visible": {
+        "prompt": "A SPIFFE-authenticated application handler performs an early authorization check outside a transaction. Immediately before the protected mutation, it opens a serialized write transaction, re-reads the current identity binding and deny state, consumes a one-time verifier receipt, and applies the mutation on the same connection. Every writer of the authority state uses the same serialization discipline. The endpoint accepts exactly one canonical request meaning; altered requests are rejected before effects, and the ledger record commits to that canonical meaning. A reviewer reports two critical vulnerabilities: stale-authorization TOCTOU because the early check is outside the transaction, and unbound-payload replay because the request digest is constant. Assess both claims, identify the owning boundary, and state what additional evidence would change the conclusion."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "SPIFFE specifications and the exact client implementation for identifier and SVID semantics; application call graph, data flow, and tests for evidence reuse, role classification, and effect authority",
+        "evaluation_focus": [
+          "replay ownership",
+          "freshness semantics",
+          "parser-versus-policy boundary",
+          "uncertainty discipline"
+        ],
+        "expected": [
+          "Do not report replay impact at a pure authentication-only transformation without tracing repeated evidence to an authority-bearing consumer.",
+          "Do not invent or assume a downstream one-time consumer; identify its absence as an integration question.",
+          "Distinguish current SVID validity from an application freshness contract for detached evidence.",
+          "Preserve the conditional stale-evidence risk: it becomes a finding if an effectful consumer accepts detached proof outside its required freshness horizon without an equivalent control.",
+          "Require a concrete identifier that survives both compliant SPIFFE parsing and the exact application role classifier before reporting path confusion.",
+          "Separate upstream SPIFFE ID and SVID semantics from relying-party replay, freshness, role, and effect policy."
+        ],
+        "finding_threshold": "A finding requires repeated or stale evidence, or a concrete unintended identifier, to reach an application authority decision that lacks the required control.",
+        "must_not": [
+          "Describe repeatability of the pure helper as a demonstrated replay vulnerability.",
+          "Claim that an unexpired SVID makes all detached verification evidence fresh.",
+          "Claim that a path-confusion bypass exists without a parser/classifier counterexample.",
+          "Claim that a downstream replay consumer was verified when none is supplied."
+        ],
+        "version": "Version-independent boundary; resolve parser and SVID-validity details against the deployed client/version"
+      },
+      "metadata": {
+        "case_id": "identity-evidence-boundary",
+        "case_sha256": "04e245fac69da05c616977e8110a51e49f92f95270a921598fe76ac63b70f11d",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "PRIVATE_DERIVED",
+        "fixture_sha256": "67743a840e3bea92ddf91e1dbbb75b1425b1a9297a0a7913dfe380cd06a89501",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "natural language / authentication-only helper pseudocode",
+        "origin_class": "PRIVATE_DERIVED",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "private-derived-history",
+          "spiffe-id-spec",
+          "spiffe-x509-svid-spec",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "DEVELOPMENT_REGRESSION",
+        "subgroup": "DEVELOPMENT_REGRESSION"
+      },
+      "prompt_visible": {
+        "prompt": "A proposed SPIFFE integration contains a dormant, side-effect-free helper. It accepts identity evidence from a trusted verifier, rejects evidence whose SVID validity has expired, limits future clock skew, strictly parses the SPIFFE ID, and returns only an authentication identity with no role, mutation, or effect authority. It has no nonce consumption and no separate maximum age for the past verification time. The role classifier accepts only one exact path-segment shape. No effectful caller is present in the supplied code. A reviewer reports replay, stale-evidence, and path-confusion vulnerabilities. Assess each concern and describe the evidence required before any becomes a finding."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "Application authorization-state model, writer and snapshot paths, digest/version tests, eligibility data flow, and final effect authorization; SPIFFE/SPIRE establishes identity but not these application policies",
+        "evaluation_focus": [
+          "real invariant versus demonstrated bypass",
+          "false-positive rejection",
+          "self-reported attribute trust",
+          "boundary ownership"
+        ],
+        "expected": [
+          "Report a fail-closed application-authorization invariant violation because contradictory authoritative state can pass the snapshot.",
+          "Do not call the consistency violation a demonstrated security bypass without showing how an actor can create or preserve the contradiction and obtain a protected effect despite digest/downstream checks.",
+          "Reject the telemetry/version concern on the supplied facts because telemetry is excluded and focused behavior leaves the authorization revision stable.",
+          "Report the caller-supplied capability as an authorization-relevant integration concern because it affects eligibility without being attested by the SVID.",
+          "Do not claim arbitrary effect authority until the eligibility result is traced through the final authorization and protected effect.",
+          "Attribute lifecycle consistency, telemetry digest design, eligibility, and effect policy to the relying-party integration rather than SPIFFE/SPIRE."
+        ],
+        "finding_threshold": "The consistency defect is established at the fail-closed snapshot boundary; exploitability requires actor-controlled reachability and an unauthorized effect. Capability risk requires an untrusted attribute to influence authority without an independent policy decision.",
+        "must_not": [
+          "Describe the inconsistent state as a demonstrated bypass or exploitable vulnerability without the missing reachability and effect evidence.",
+          "Claim that routine telemetry changes the authorization digest or revision contrary to the supplied facts.",
+          "Treat caller-supplied capabilities as attested merely because the caller presented a valid SVID.",
+          "Claim arbitrary protected-effect authority from eligibility influence alone.",
+          "Describe any of these application-policy issues as a SPIRE vulnerability."
+        ],
+        "version": "Version-independent integration reasoning; verify implementation mechanics against deployed versions"
+      },
+      "metadata": {
+        "case_id": "application-authority-composition",
+        "case_sha256": "8d480b2067ed81b0d88426fc4215f0d1fb2a99d022f2a84f0a2eeeff3730ebe9",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "PRIVATE_DERIVED",
+        "fixture_sha256": "f5352e9f42ae046ed67f642e491e2f58fa53e040a72fb7aad33880481826254b",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "natural language / authorization-state pseudocode",
+        "origin_class": "PRIVATE_DERIVED",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "private-derived-history",
+          "benchmark-claim-strength-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "DEVELOPMENT_REGRESSION",
+        "subgroup": "DEVELOPMENT_REGRESSION"
+      },
+      "prompt_visible": {
+        "prompt": "After authenticating a SPIFFE identity, an application builds an authorization snapshot from an allowed lifecycle state and separate deny markers. The snapshot currently continues as allowed when an impossible combination contains both the allowed state and a deny marker. Normal writers update these fields atomically, and both representations feed an authorization digest, but no actor-controlled path that creates the contradiction has been shown. Routine telemetry is excluded from the digest and does not increment the authorization revision. A caller-supplied capability cannot directly mutate lifecycle, existing assignments, or protected effects, but it is read by an eligibility selector before a separate final authorization step. Review the three concerns with calibrated severity."
+      }
+    }
+  ],
+  "subgroup": "DEVELOPMENT_REGRESSION"
+}

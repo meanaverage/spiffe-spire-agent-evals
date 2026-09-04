@@ -1,0 +1,73 @@
+{
+  "corpus_version": "0.1.0",
+  "pair_count": 6,
+  "pairs": [
+    {
+      "case_ids": [
+        "holdout-attribute-controller-policy",
+        "holdout-attribute-direct-effect"
+      ],
+      "decisive_mutation": "Replace an independent controller-owned exact-match policy check before effect with direct caller-field flow to the privileged backend.",
+      "integrity": "PASS",
+      "irrelevant_difference_assessment": "No case ID, pair role, benign/defect label, or expected answer is included in prompt-visible material. The stated differences implement the security-relevant control under test.",
+      "pair_id": "caller-supplied-attribute",
+      "prompt_leaks_pair_role": false
+    },
+    {
+      "case_ids": [
+        "holdout-freshness-within-contract",
+        "holdout-freshness-outside-contract"
+      ],
+      "decisive_mutation": "Replace an enforced 90-second horizon and 40-second assertion with no maximum-age check and an accepted 180-second assertion.",
+      "integrity": "PASS",
+      "irrelevant_difference_assessment": "No case ID, pair role, benign/defect label, or expected answer is included in prompt-visible material. The stated differences implement the security-relevant control under test.",
+      "pair_id": "detached-evidence-freshness",
+      "prompt_leaks_pair_role": false
+    },
+    {
+      "case_ids": [
+        "holdout-contradiction-unreachable",
+        "holdout-contradiction-demonstrated"
+      ],
+      "decisive_mutation": "Keep the fail-open invariant defect and add an ordinary-tenant creation sequence plus a controlled protected-effect test.",
+      "integrity": "PASS",
+      "irrelevant_difference_assessment": "No case ID, pair role, benign/defect label, or expected answer is included in prompt-visible material. The stated differences implement the security-relevant control under test.",
+      "pair_id": "invariant-versus-bypass",
+      "prompt_leaks_pair_role": false
+    },
+    {
+      "case_ids": [
+        "holdout-commitment-single-command",
+        "holdout-commitment-two-commands"
+      ],
+      "decisive_mutation": "Expand one accepted canonical security meaning into two meanings that share the same authorization commitment and consumer check.",
+      "integrity": "PASS",
+      "irrelevant_difference_assessment": "No case ID, pair role, benign/defect label, or expected answer is included in prompt-visible material. The stated differences implement the security-relevant control under test.",
+      "pair_id": "request-commitment",
+      "prompt_leaks_pair_role": false
+    },
+    {
+      "case_ids": [
+        "holdout-role-exact-classifier",
+        "holdout-role-prefix-classifier"
+      ],
+      "decisive_mutation": "Keep the SPIFFE ID fixed while replacing exact path-segment classification with a serialized prefix classifier that grants the role.",
+      "integrity": "PASS",
+      "irrelevant_difference_assessment": "No case ID, pair role, benign/defect label, or expected answer is included in prompt-visible material. The stated differences implement the security-relevant control under test.",
+      "pair_id": "spiffe-id-role-classification",
+      "prompt_leaks_pair_role": false
+    },
+    {
+      "case_ids": [
+        "holdout-toctou-serialized-reread",
+        "holdout-toctou-stale-snapshot"
+      ],
+      "caveat": "BEGIN IMMEDIATE is pseudocode without a named datastore/version; real review must verify deployed isolation semantics.",
+      "decisive_mutation": "Replace the final serialized authority reread and same-transaction effect with a cached pre-transaction decision plus independently committing revocation.",
+      "integrity": "PASS_WITH_CAVEAT",
+      "irrelevant_difference_assessment": "No case ID, pair role, benign/defect label, or expected answer is included in prompt-visible material. The stated differences implement the security-relevant control under test.",
+      "pair_id": "toctou",
+      "prompt_leaks_pair_role": false
+    }
+  ]
+}

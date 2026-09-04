@@ -1,0 +1,329 @@
+{
+  "$schema": "../../../schemas/case-v1.json",
+  "corpus_role": "PUBLIC_REGRESSION_V0",
+  "corpus_version": "0.1.0",
+  "description": "Public regression cases.",
+  "scenario_count": 8,
+  "scenarios": [
+    {
+      "ground_truth": {
+        "authority": "spiffe/spire@v1.15.3 test/integration/suites/join-token",
+        "expected": [
+          "Do not assume reuse is allowed.",
+          "The v1.15.3 join-token integration suite explicitly verifies that a join token cannot be reused.",
+          "Use the exact tagged join-token suite as implementation evidence."
+        ],
+        "must_not": [
+          "Treat a generic zero-trust tutorial as authoritative.",
+          "Generalize the answer from a different SPIRE version without checking the delta."
+        ],
+        "version": "SPIRE v1.15.3"
+      },
+      "metadata": {
+        "case_id": "join-token-single-use",
+        "case_sha256": "0da60d0a20c9ad96b30087a8c5df21389cf0ad4ffb7833c2ec45497b1fb06800",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "MINIMALLY_EXTRACTED",
+        "fixture_sha256": "e38a2bf6ea4dd20276f37dd92a7333caec93ef535250548602a826ec9ac7f456",
+        "ground_truth_strength": "AUTHORITATIVE",
+        "language_or_config_format": "natural language / SPIRE integration test",
+        "origin_class": "AUTHORITATIVE",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "spire-join-token-readme",
+          "spire-join-token-reuse-test"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "A SPIRE v1.15.3 agent successfully attested using a join token. Can the same token be reused to attest another agent? Give the strongest evidence you would consult before answering."
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "spiffe/spire@v1.15.3 test/integration/suites/node-re-attestation/03-evict-agents",
+        "expected": [
+          "No.",
+          "Re-attestation behavior depends on the node attestor.",
+          "The v1.15.3 node-re-attestation suite expects the x509pop agent to re-attest and the join-token agent not to, because the join-token flow is TOFU in this tested behavior."
+        ],
+        "must_not": [
+          "Claim that all SPIRE agents re-attest after eviction.",
+          "Claim that no SPIRE agent can re-attest after eviction."
+        ],
+        "version": "SPIRE v1.15.3"
+      },
+      "metadata": {
+        "case_id": "join-token-reattestation",
+        "case_sha256": "0d33d2d6fd535e21182faab7afdc00c7c16547af8f63b7126e8b11d1a8c08596",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "MINIMALLY_EXTRACTED",
+        "fixture_sha256": "3734d97caffe96f6dcc5dc93ea79b53eef2c6594d86159f57acf06cba108b1df",
+        "ground_truth_strength": "AUTHORITATIVE",
+        "language_or_config_format": "natural language / SPIRE integration test",
+        "origin_class": "AUTHORITATIVE",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "spire-node-reattest-readme",
+          "spire-node-reattest-evict",
+          "spire-node-reattest-check"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "Two SPIRE v1.15.3 agents are evicted. One uses x509pop and the other join_token. Should an operator expect both to re-attest automatically?"
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "spiffe/spire@v1.15.3 test/integration/suites/entries/02-start-agents and 03-fetch-svids",
+        "expected": [
+          "Start with registration entries and workload selection, not TLS.",
+          "Inspect parent IDs and selectors.",
+          "The v1.15.3 entries suite demonstrates different Unix UIDs retrieving different registered SVIDs."
+        ],
+        "must_not": [
+          "Assume the first returned SPIFFE ID should be identical for every local UID.",
+          "Change trust bundles before checking registration/selectors."
+        ],
+        "version": "SPIRE v1.15.3"
+      },
+      "metadata": {
+        "case_id": "uid-workload-selection",
+        "case_sha256": "013b3b823a6c800afef6e3af7384a238d2b7e8dcf3ff2ba85656381ff5f31c7a",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "MINIMALLY_EXTRACTED",
+        "fixture_sha256": "464a20ece64a9762eb4312c6535011781ecf2f2b41d163a242ad21c7eb9db19b",
+        "ground_truth_strength": "AUTHORITATIVE",
+        "language_or_config_format": "natural language / Unix UID selectors",
+        "origin_class": "AUTHORITATIVE",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "spire-entries-start-agents",
+          "spire-entries-fetch-svids"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "An application says SPIRE is broken because UID 1001 receives one SPIFFE ID while UID 1002 receives a different shared identity. Where should the investigation start?"
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "spiffe/spire@v1.15.3 rotation suite plus spiffe/go-spiffe/v2@v2.8.1 workloadapi.X509Source",
+        "expected": [
+          "No.",
+          "Rotation is normal lifecycle behavior.",
+          "Use a client/source model that follows Workload API updates.",
+          "go-spiffe X509Source maintains SVIDs and bundles from Workload API updates, and the SPIRE rotation suite verifies valid SVIDs across repeated SVID/CA rotation periods."
+        ],
+        "must_not": [
+          "Recommend disabling rotation as the production fix.",
+          "Treat enrollment-time material as permanently current authority."
+        ],
+        "version": "SPIRE v1.15.3 / go-spiffe v2.8.1"
+      },
+      "metadata": {
+        "case_id": "rotation-is-normal",
+        "case_sha256": "b3f860d78c86cf6809de55acbc92757faabf9f54743eabba0b2aaa028f044189",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "MINIMALLY_EXTRACTED",
+        "fixture_sha256": "75ff52fa3d95517af634e0ec1b28d0b635284c199f264b846fe3220dbd7ace35",
+        "ground_truth_strength": "AUTHORITATIVE",
+        "language_or_config_format": "natural language / Go client and SPIRE integration",
+        "origin_class": "AUTHORITATIVE",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "spire-rotation-readme",
+          "spire-rotation-check",
+          "go-spiffe-x509source",
+          "go-spiffe-x509source-test"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "A service caches the X.509-SVID and bundle obtained at startup forever. It fails after the SPIRE server rotates authority. Is the right fix to disable rotation?"
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "SPIFFE identity/authentication model; application authorization lies outside SPIFFE/SPIRE semantics",
+        "expected": [
+          "No.",
+          "Successful SPIFFE authentication establishes peer identity under the configured trust model.",
+          "Application publication authority is a separate application-policy decision."
+        ],
+        "must_not": [
+          "Infer production publication authority solely from the SPIFFE ID.",
+          "Recommend encoding mutable application permissions into the credential merely to avoid application authorization."
+        ],
+        "version": "version-independent boundary; verify implementation details against deployed versions"
+      },
+      "metadata": {
+        "case_id": "identity-not-authorization",
+        "case_sha256": "a56840a8c2cd9b889a200b27a552eb7fecc225654e2fe9d75f924173a9473961",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "MINIMALLY_EXTRACTED",
+        "fixture_sha256": "9782d6620e521d7685ed5cbfa04d833c2aa051554ff71a31ec6f9be696f204ca",
+        "ground_truth_strength": "AUTHORITATIVE",
+        "language_or_config_format": "natural language / relying-party policy boundary",
+        "origin_class": "AUTHORITATIVE",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "spiffe-id-spec",
+          "spiffe-trust-domain-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "A relying party successfully authenticates peer spiffe://example.org/workload/a. Does SPIFFE authentication alone prove that the workload may publish a production release?"
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "SPIFFE authentication boundary and relying-party verification semantics",
+        "expected": [
+          "No.",
+          "A peer-supplied identity claim is not equivalent to relying-party authentication evidence.",
+          "Authentication evidence must be derived from the component/path that actually verified the peer credential."
+        ],
+        "must_not": [
+          "Treat application JSON as equivalent to verified TLS/Workload API identity evidence."
+        ],
+        "version": "version-independent boundary"
+      },
+      "metadata": {
+        "case_id": "peer-claim-not-verification",
+        "case_sha256": "6ba58fab714cf861d6c516c4e53547e781691e6f64976e3182abd4aea512e806",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "MINIMALLY_EXTRACTED",
+        "fixture_sha256": "bed3b6d71616c7f48df27cd6bf47807e5033b96fc310bb3e3d34c8db35ba294e",
+        "ground_truth_strength": "AUTHORITATIVE",
+        "language_or_config_format": "JSON / HTTP request",
+        "origin_class": "AUTHORITATIVE",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "spiffe-id-spec",
+          "spiffe-x509-svid-spec"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "An HTTP request body contains {\"spiffe_id\":\"spiffe://example.org/workload/a\"}. Can the server persist that field as proof that it authenticated workload/a?"
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "operational boundary; confirm retrieval behavior with exact-version SPIRE/client interfaces",
+        "expected": [
+          "No.",
+          "Process existence is weaker than Workload API/SVID readiness.",
+          "Check the Workload API path and actual SVID retrieval/validity relevant to the workload."
+        ],
+        "must_not": [
+          "Equate service-manager active state with successful workload authentication readiness."
+        ],
+        "version": "version-aware operational check"
+      },
+      "metadata": {
+        "case_id": "process-up-not-health",
+        "case_sha256": "d7394625a885abef89e95b769bea5ff3a445474b512b1e908cfb6b81055f25b0",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "aafef4891cf66f2f08c92f13738eed2068c847e6b8eb14d1b76829b63c3fb153",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "service-manager status / Workload API readiness",
+        "origin_class": "DERIVED",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "benchmark-operational-sufficiency-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "spire-agent.service is active. Is that sufficient evidence that a workload can currently retrieve a valid X.509-SVID?"
+      }
+    },
+    {
+      "ground_truth": {
+        "authority": "skill source hierarchy and exact-version discipline",
+        "expected": [
+          "Do not claim exact behavioral equivalence yet.",
+          "Determine the deployed version first.",
+          "Use v1.15.3 only as a reference lead until version applicability is established."
+        ],
+        "must_not": [
+          "Present v1.15.3 behavior as universal SPIRE behavior without qualification."
+        ],
+        "version": "unknown"
+      },
+      "metadata": {
+        "case_id": "unknown-version-discipline",
+        "case_sha256": "05a68eb2e1302bce3e10a6f9531a208f37db7454f94c35f54cff9a0a986cfbda",
+        "corpus_role": "PUBLIC_REGRESSION_V0",
+        "expected_claim_classes": [
+          "NOT_RECORDED"
+        ],
+        "fixture_kind": "SYNTHETIC_MUTATION",
+        "fixture_sha256": "0537679b9b02e531226574a83f39a3c87f97f99bce10b08e7648a9ccb957e4ff",
+        "ground_truth_strength": "DERIVED",
+        "language_or_config_format": "natural language / version metadata",
+        "origin_class": "DERIVED",
+        "pair_id": null,
+        "paired_case_id": null,
+        "provenance_ids": [
+          "benchmark-version-discipline-policy"
+        ],
+        "publication_status": "PUBLISHED",
+        "source_class": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED",
+        "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+      },
+      "prompt_visible": {
+        "prompt": "A deployment's SPIRE version is unknown. An engineer asks whether a lifecycle detail observed in v1.15.3 definitely applies. How should the agent answer?"
+      }
+    }
+  ],
+  "subgroup": "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED"
+}

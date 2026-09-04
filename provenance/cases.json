@@ -1,0 +1,396 @@
+{
+  "case_count": 23,
+  "cases": [
+    {
+      "case_id": "application-authority-composition",
+      "case_sha256": "8d480b2067ed81b0d88426fc4215f0d1fb2a99d022f2a84f0a2eeeff3730ebe9",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "PRIVATE_DERIVED",
+      "fixture_sha256": "f5352e9f42ae046ed67f642e491e2f58fa53e040a72fb7aad33880481826254b",
+      "ground_truth_rationale": "The stipulated fail-open contradictory state establishes an invariant violation while actor reachability/effect remain absent.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "PRIVATE_DERIVED",
+      "source_ids": [
+        "private-derived-history",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "The scenario separately stipulates benign telemetry and conditional caller-attribute facts, allowing calibrated product-neutral grading.",
+      "transformation_method": "Product-neutral generalization from independently adjudicated private review; all private product/repository/schema details removed and public truth limited to stipulated facts."
+    },
+    {
+      "case_id": "holdout-attribute-controller-policy",
+      "case_sha256": "78a9448fc513701cc3bd7f53342c556a65367d9ccc8606c9ad07b02cfc2e3920",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "cc3c4810813997738d7d0808ad34f4094ba82b746400a193d0bd804a0c9a4fcf",
+      "ground_truth_rationale": "An independent controller-owned exact-match decision constrains the caller field before protected effect.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy",
+        "spiffe-id-spec"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Replace an independent controller-owned exact-match policy check before effect with direct caller-field flow to the privileged backend.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-attribute-direct-effect",
+      "case_sha256": "6119a8d229aafe5d6641a2801b12cbb72666f6826bba4ceaf1f003bc0602160c",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "2f4255e6b5bf8ca138dcab4d56bdc3541b8158315b0e1736c1d9ff57b6f4d08f",
+      "ground_truth_rationale": "The untrusted field directly selects a protected backend contrary to stipulated controller-owned policy.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy",
+        "spiffe-id-spec"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Replace an independent controller-owned exact-match policy check before effect with direct caller-field flow to the privileged backend.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-commitment-single-command",
+      "case_sha256": "4f09813d7ab23e545fd0e1d97c1623edaa54754d786d38c3e1738337d2b02fa3",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "50f6a0483a93a709a24ec9c4347dac5d2ddef0abe58764ea7a7143350a1d00b1",
+      "ground_truth_rationale": "A singleton accepted semantic language and one-time effect make the constant domain tag unambiguous on supplied facts.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Expand one accepted canonical security meaning into two meanings that share the same authorization commitment and consumer check.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-commitment-two-commands",
+      "case_sha256": "3c30b49d102b8175b2b3b6751df16c5352518fbae9422c120eaaf85d37f62438",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "440139d4f6e341035470a8c26105831549bd5e86067c3958dfd345159537775c",
+      "ground_truth_rationale": "Two security-distinct accepted meanings share one commitment and consumer comparison, establishing substitution at the invariant level.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Expand one accepted canonical security meaning into two meanings that share the same authorization commitment and consumer check.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-contradiction-demonstrated",
+      "case_sha256": "7e5056970e4292942bf2f13bc840ec111fe976ab06e72f2f067ebcd355868d57",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "ca29765f9e57400ef1910e327d36725ed2bb935370aa6d4aecdf82d097818045",
+      "ground_truth_rationale": "The added actor-controlled sequence and protected-effect test satisfy the benchmark's demonstrated-bypass prerequisites.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Keep the fail-open invariant defect and add an ordinary-tenant creation sequence plus a controlled protected-effect test.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-contradiction-unreachable",
+      "case_sha256": "dec46f8a76a4f517edaf5da8d05e2e96d582573644968b3b928bc49673e04e39",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "e9e82ee0e765ac4f045d7367bf28c15b899941c977c8258502a54304e7943c87",
+      "ground_truth_rationale": "Source-like pseudocode violates the stated fail-closed policy but lacks actor-controlled reachability/effect.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Keep the fail-open invariant defect and add an ordinary-tenant creation sequence plus a controlled protected-effect test.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-freshness-outside-contract",
+      "case_sha256": "9ad9d78bebc7bd20976780c46d6e74d80ea832e4019f91082f9e892483e1bf6e",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "160d1e2d24d3e180262dd0104c1f507d0e304e93ea89bc0fa6923904c3fea82e",
+      "ground_truth_rationale": "A focused test reaches authority with 180-second evidence despite a stipulated 90-second policy.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy",
+        "spiffe-id-spec"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Replace an enforced 90-second horizon and 40-second assertion with no maximum-age check and an accepted 180-second assertion.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-freshness-within-contract",
+      "case_sha256": "210511311e2cd64599578d93a4127f887111cea8f52d164bb7b5f709f4b771ac",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "8605288ff3372b548fd3d307f809c7a8b93d842c7cc19bb3fa64f49ecac95099",
+      "ground_truth_rationale": "The application enforces its stated 90-second horizon and the supplied evidence is 40 seconds old.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy",
+        "spiffe-id-spec"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Replace an enforced 90-second horizon and 40-second assertion with no maximum-age check and an accepted 180-second assertion.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-role-exact-classifier",
+      "case_sha256": "e743d09244f7dd7f49e1987d4eb81a3c665c6adb7ed3d515acce3de02fbbddde",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "1eae9aa99e634482fad8049fbf7bb037f4dcd9963faa2002f903755305b81d87",
+      "ground_truth_rationale": "The fixed syntactically valid identifier is denied by exact application-owned path classification.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy",
+        "spiffe-id-spec"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Keep the SPIFFE ID fixed while replacing exact path-segment classification with a serialized prefix classifier that grants the role.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-role-prefix-classifier",
+      "case_sha256": "9063a0ed858d7b3c71a0b0983d72bbfdb46ec292096f20347a3ded20dcde751d",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "8be4cd50d3e6ef04af24769744f0d551431857a75175e5cb15b5c18d3932238f",
+      "ground_truth_rationale": "The same valid identifier satisfies an erroneous prefix classifier and reaches a role decision.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy",
+        "spiffe-id-spec"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Keep the SPIFFE ID fixed while replacing exact path-segment classification with a serialized prefix classifier that grants the role.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-toctou-serialized-reread",
+      "case_sha256": "b2a6d43b3cf8c7288221c62ed3298271559d6d99641c9d18735adec6aebf941a",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "4a0060e0e8055da4c28206ed9fcc8003b13479bcfd136c92e77a2cc55f338f1c",
+      "ground_truth_rationale": "Stipulated compatible serialization and a final in-transaction reread make the preliminary check non-authoritative; deployed isolation still requires verification.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Replace the final serialized authority reread and same-transaction effect with a cached pre-transaction decision plus independently committing revocation.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "holdout-toctou-stale-snapshot",
+      "case_sha256": "b155851310c42c3f5e5d6ec2f047d207611a3656572c6b95fb84f498ecfa86bc",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "8c015c4a8bafc07c5cd4ffc453bf300ba6e1295c1bd7291093a4f7b146759606",
+      "ground_truth_rationale": "The stipulated cached decision and independently committing revocation create a policy-violating stale-authority interleaving.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "synthetic-contrastive-authoring",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "Expected strength follows from explicit scenario facts, the published claim lattice, and the recorded decisive pair mutation; it is not a discovered upstream vulnerability.",
+      "synthetic_mutation": "Replace the final serialized authority reread and same-transaction effect with a cached pre-transaction decision plus independently committing revocation.",
+      "transformation_method": "Original product-neutral synthetic scenario authored after diagnosis of the first ablation and locked before the tested skill wording change."
+    },
+    {
+      "case_id": "identity-evidence-boundary",
+      "case_sha256": "04e245fac69da05c616977e8110a51e49f92f95270a921598fe76ac63b70f11d",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "PRIVATE_DERIVED",
+      "fixture_sha256": "67743a840e3bea92ddf91e1dbbb75b1425b1a9297a0a7913dfe380cd06a89501",
+      "ground_truth_rationale": "The prompt stipulates a side-effect-free identity transformation and no authority-bearing consumer; public SPIFFE sources establish the identity boundary.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "PRIVATE_DERIVED",
+      "source_ids": [
+        "private-derived-history",
+        "spiffe-id-spec",
+        "spiffe-x509-svid-spec",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "The expected answer is limited to evidence required before replay, freshness, or path-confusion becomes a finding.",
+      "transformation_method": "Product-neutral generalization from independently adjudicated private review; all private product/repository/schema details removed and public truth limited to stipulated facts."
+    },
+    {
+      "case_id": "identity-not-authorization",
+      "case_sha256": "a56840a8c2cd9b889a200b27a552eb7fecc225654e2fe9d75f924173a9473961",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "MINIMALLY_EXTRACTED",
+      "fixture_sha256": "9782d6620e521d7685ed5cbfa04d833c2aa051554ff71a31ec6f9be696f204ca",
+      "ground_truth_rationale": "SPIFFE specifies identity under a trust domain; application permission to publish remains a relying-party policy decision.",
+      "ground_truth_strength": "AUTHORITATIVE",
+      "origin_class": "AUTHORITATIVE",
+      "source_ids": [
+        "spiffe-id-spec",
+        "spiffe-trust-domain-spec"
+      ],
+      "source_sufficiency": "The case claims only the authentication/authorization boundary and does not invent a universal application policy.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    },
+    {
+      "case_id": "join-token-reattestation",
+      "case_sha256": "0d33d2d6fd535e21182faab7afdc00c7c16547af8f63b7126e8b11d1a8c08596",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "MINIMALLY_EXTRACTED",
+      "fixture_sha256": "3734d97caffe96f6dcc5dc93ea79b53eef2c6594d86159f57acf06cba108b1df",
+      "ground_truth_rationale": "The pinned v1.15.3 re-attestation suite distinguishes X509PoP behavior from join-token TOFU behavior after eviction.",
+      "ground_truth_strength": "AUTHORITATIVE",
+      "origin_class": "AUTHORITATIVE",
+      "source_ids": [
+        "spire-node-reattest-readme",
+        "spire-node-reattest-evict",
+        "spire-node-reattest-check"
+      ],
+      "source_sufficiency": "The claim is scoped to the two tested attestors and exact SPIRE release rather than generalized to every node attestor.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    },
+    {
+      "case_id": "join-token-single-use",
+      "case_sha256": "0da60d0a20c9ad96b30087a8c5df21389cf0ad4ffb7833c2ec45497b1fb06800",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "MINIMALLY_EXTRACTED",
+      "fixture_sha256": "e38a2bf6ea4dd20276f37dd92a7333caec93ef535250548602a826ec9ac7f456",
+      "ground_truth_rationale": "The pinned SPIRE v1.15.3 suite explicitly exercises rejection after a join token has already been used.",
+      "ground_truth_strength": "AUTHORITATIVE",
+      "origin_class": "AUTHORITATIVE",
+      "source_ids": [
+        "spire-join-token-readme",
+        "spire-join-token-reuse-test"
+      ],
+      "source_sufficiency": "The expected answer is restricted to the exact tagged behavior tested by the authoritative integration suite.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    },
+    {
+      "case_id": "layered-authority-and-request-commitment",
+      "case_sha256": "b1935bbba024c78c5921c6ee42aa67a352f5c8077c7430e875dc68b0cb197792",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "PRIVATE_DERIVED",
+      "fixture_sha256": "9de2dd3e613984a18e0f6c54cd078ad113b81c0ad24387bb2e6127aa3483ee81",
+      "ground_truth_rationale": "The public outcome follows from stipulated final serialized validation and a singleton accepted request language.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "PRIVATE_DERIVED",
+      "source_ids": [
+        "private-derived-history",
+        "benchmark-claim-strength-policy"
+      ],
+      "source_sufficiency": "The generalized facts are self-contained; private history is inspiration, not reproducible public authority.",
+      "transformation_method": "Product-neutral generalization from independently adjudicated private review; all private product/repository/schema details removed and public truth limited to stipulated facts."
+    },
+    {
+      "case_id": "peer-claim-not-verification",
+      "case_sha256": "6ba58fab714cf861d6c516c4e53547e781691e6f64976e3182abd4aea512e806",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "MINIMALLY_EXTRACTED",
+      "fixture_sha256": "bed3b6d71616c7f48df27cd6bf47807e5033b96fc310bb3e3d34c8db35ba294e",
+      "ground_truth_rationale": "A caller-written JSON string is not the cryptographically verifiable identity evidence defined by SPIFFE ID and X.509-SVID semantics.",
+      "ground_truth_strength": "AUTHORITATIVE",
+      "origin_class": "AUTHORITATIVE",
+      "source_ids": [
+        "spiffe-id-spec",
+        "spiffe-x509-svid-spec"
+      ],
+      "source_sufficiency": "The JSON is synthetic, while the narrow verification boundary is established by authoritative specifications.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    },
+    {
+      "case_id": "process-up-not-health",
+      "case_sha256": "d7394625a885abef89e95b769bea5ff3a445474b512b1e908cfb6b81055f25b0",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "aafef4891cf66f2f08c92f13738eed2068c847e6b8eb14d1b76829b63c3fb153",
+      "ground_truth_rationale": "An active process state does not contain evidence of successful Workload API retrieval or current SVID validity.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "benchmark-operational-sufficiency-policy"
+      ],
+      "source_sufficiency": "The result is a bounded evidence-sufficiency conclusion, not a normative claim about a particular SPIRE version.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    },
+    {
+      "case_id": "rotation-is-normal",
+      "case_sha256": "b3f860d78c86cf6809de55acbc92757faabf9f54743eabba0b2aaa028f044189",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "MINIMALLY_EXTRACTED",
+      "fixture_sha256": "75ff52fa3d95517af634e0ec1b28d0b635284c199f264b846fe3220dbd7ace35",
+      "ground_truth_rationale": "Pinned SPIRE tests exercise validity across rotation, while the pinned go-spiffe source follows Workload API updates.",
+      "ground_truth_strength": "AUTHORITATIVE",
+      "origin_class": "AUTHORITATIVE",
+      "source_ids": [
+        "spire-rotation-readme",
+        "spire-rotation-check",
+        "go-spiffe-x509source",
+        "go-spiffe-x509source-test"
+      ],
+      "source_sufficiency": "The two exact upstream implementations jointly establish rotation as expected lifecycle and a maintained update path.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    },
+    {
+      "case_id": "uid-workload-selection",
+      "case_sha256": "013b3b823a6c800afef6e3af7384a238d2b7e8dcf3ff2ba85656381ff5f31c7a",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "MINIMALLY_EXTRACTED",
+      "fixture_sha256": "464a20ece64a9762eb4312c6535011781ecf2f2b41d163a242ad21c7eb9db19b",
+      "ground_truth_rationale": "The pinned entries suite starts distinct UID contexts and verifies the SVIDs selected for them.",
+      "ground_truth_strength": "AUTHORITATIVE",
+      "origin_class": "AUTHORITATIVE",
+      "source_ids": [
+        "spire-entries-start-agents",
+        "spire-entries-fetch-svids"
+      ],
+      "source_sufficiency": "The suite directly supports beginning diagnosis at registration entries, parent IDs, and selectors.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    },
+    {
+      "case_id": "unknown-version-discipline",
+      "case_sha256": "05a68eb2e1302bce3e10a6f9531a208f37db7454f94c35f54cff9a0a986cfbda",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "fixture_kind": "SYNTHETIC_MUTATION",
+      "fixture_sha256": "0537679b9b02e531226574a83f39a3c87f97f99bce10b08e7648a9ccb957e4ff",
+      "ground_truth_rationale": "Exact-version behavior cannot be transferred to an unknown deployment without first establishing version applicability.",
+      "ground_truth_strength": "DERIVED",
+      "origin_class": "DERIVED",
+      "source_ids": [
+        "benchmark-version-discipline-policy"
+      ],
+      "source_sufficiency": "The expected answer is explicitly an epistemic benchmark policy rather than SPIFFE normative text.",
+      "transformation_method": "Original benchmark scenario paraphrased from the pinned sources; no upstream source excerpt copied."
+    }
+  ],
+  "corpus_version": "0.1.0",
+  "schema": "spiffe-spire-agent-evals-case-provenance/v1"
+}
