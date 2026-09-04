@@ -33,6 +33,10 @@ PRIVATE_PATTERNS = {
     ),
     "loopback_or_private_ipv4": re.compile(r"\b(?:127\.0\.0\.1|10\.\d+\.\d+\.\d+|192\.168\.\d+\.\d+)\b"),
     "credential_literal": re.compile(r"(?i)(?:ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}|AKIA[0-9A-Z]{16}|-----BEGIN [A-Z ]*PRIVATE KEY-----|Authorization:\s*Bearer\s+\S+)"),
+    "credential_assignment": re.compile(
+        r"(?im)^\s*(?:password|passwd|api[_-]?key|access[_-]?token|secret[_-]?key)\s*[:=]\s*[\"']?(?!NOT_(?:RECORDED|PUBLISHED)|UNKNOWN)[^\s\"']{8,}"
+    ),
+    "cookie_header": re.compile(r"(?i)^\s*(?:cookie|set-cookie):\s*\S+", re.MULTILINE),
 }
 FORBIDDEN_PUBLIC_NAMES = {
     "raw-response.txt",
