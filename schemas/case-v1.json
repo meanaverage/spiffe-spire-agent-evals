@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/meanaverage/spiffe-spire-agent-evals/blob/v0.1.0/schemas/case-v1.json",
+  "title": "SPIFFE/SPIRE public regression corpus",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["corpus_version", "corpus_role", "subgroup", "scenario_count", "scenarios"],
+  "properties": {
+    "$schema": {"type": "string"},
+    "corpus_version": {"type": "string"},
+    "corpus_role": {"const": "PUBLIC_REGRESSION_V0"},
+    "subgroup": {
+      "enum": ["UPSTREAM_SPECIFICATION_BOUNDED_DERIVED", "DEVELOPMENT_REGRESSION", "CONTRASTIVE"]
+    },
+    "description": {"type": "string"},
+    "scenario_count": {"type": "integer", "minimum": 1},
+    "scenarios": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/scenario"}
+    }
+  },
+  "$defs": {
+    "scenario": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metadata", "prompt_visible", "ground_truth"],
+      "properties": {
+        "metadata": {
+          "type": "object",
+          "required": [
+            "case_id", "corpus_role", "subgroup", "source_class",
+            "language_or_config_format", "fixture_kind", "fixture_sha256",
+            "ground_truth_strength", "origin_class", "provenance_ids",
+            "expected_claim_classes", "publication_status", "case_sha256"
+          ],
+          "properties": {
+            "case_id": {"type": "string", "minLength": 1},
+            "corpus_role": {"const": "PUBLIC_REGRESSION_V0"},
+            "subgroup": {"type": "string"},
+            "source_class": {"type": "string"},
+            "language_or_config_format": {"type": "string"},
+            "fixture_kind": {"enum": ["EXACT_UPSTREAM", "MINIMALLY_EXTRACTED", "SYNTHETIC_MUTATION", "PRIVATE_DERIVED"]},
+            "fixture_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "case_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+            "ground_truth_strength": {"enum": ["AUTHORITATIVE", "STRONG", "DERIVED", "PRIVATE_DERIVED"]},
+            "origin_class": {"enum": ["AUTHORITATIVE", "STRONG", "DERIVED", "PRIVATE_DERIVED"]},
+            "paired_case_id": {"type": ["string", "null"]},
+            "pair_id": {"type": ["string", "null"]},
+            "provenance_ids": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+            "expected_claim_classes": {
+              "type": "array",
+              "minItems": 1,
+              "items": {"enum": ["NOT_RECORDED", "NON_FINDING", "SUSPECTED", "INVARIANT_VIOLATION", "EXPLOITABLE_VULNERABILITY", "DEMONSTRATED_BYPASS"]}
+            },
+            "publication_status": {"const": "PUBLISHED"}
+          }
+        },
+        "prompt_visible": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["prompt"],
+          "properties": {"prompt": {"type": "string", "minLength": 1}}
+        },
+        "ground_truth": {
+          "type": "object",
+          "required": ["expected", "must_not", "authority", "version"],
+          "properties": {
+            "expected": {"type": "array", "items": {"type": "string"}},
+            "must_not": {"type": "array", "items": {"type": "string"}},
+            "authority": {"type": "string"},
+            "version": {"type": "string"},
+            "evaluation_focus": {"type": "array", "items": {"type": "string"}},
+            "finding_threshold": {"type": "string"},
+            "expected_claims": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["concern", "classification"],
+                "properties": {
+                  "concern": {"type": "string"},
+                  "classification": {"enum": ["non_finding", "suspected", "invariant_violation", "exploitable_vulnerability", "demonstrated_bypass"]}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
