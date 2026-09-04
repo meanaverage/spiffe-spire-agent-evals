@@ -1,0 +1,27 @@
+{
+  "case_count": 23,
+  "errors": [],
+  "grader_calls": 60,
+  "matched_pair_count": 6,
+  "origin_counts": {
+    "AUTHORITATIVE": 6,
+    "DERIVED": 14,
+    "PRIVATE_DERIVED": 3
+  },
+  "provenance_case_count": 23,
+  "public_unreleased_holdout_content": false,
+  "raw_response_policy": "PUBLISH_HASHES_AND_SCORES_ONLY",
+  "response_hash_count": 360,
+  "response_level_grades": 720,
+  "schema": "spiffe-spire-agent-evals-publication-validation/v1",
+  "status": "passed",
+  "strength_counts": {
+    "AUTHORITATIVE": 6,
+    "DERIVED": 17
+  },
+  "subgroup_counts": {
+    "CONTRASTIVE": 12,
+    "DEVELOPMENT_REGRESSION": 3,
+    "UPSTREAM_SPECIFICATION_BOUNDED_DERIVED": 8
+  }
+}

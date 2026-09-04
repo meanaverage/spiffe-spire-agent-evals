@@ -1,0 +1,1805 @@
+{
+  "aggregates": [
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 6.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.6667,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 1.1667
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 5.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 1.3333,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 0.8333
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 4.3333,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.6667,
+        "false_positive_discipline": 0.5,
+        "semantic_correctness": 0.3333
+      },
+      "response_count": 3,
+      "scenario_id": "application-authority-composition",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 7.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 7.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.1667,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 6.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 6.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 4.8333,
+      "mean_dimensions": {
+        "authority_correctness": 0.8333,
+        "boundary_correctness": 1.6667,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.1667,
+        "semantic_correctness": 1.1667
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 6.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "identity-evidence-boundary",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 7.3333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 1.5,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 1.8333
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 7.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 1.5,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 1.8333
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 6.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 1.6667,
+        "claim_label_consistency": 1.5,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 4.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 1.1667,
+        "claim_label_consistency": 0.8333,
+        "false_positive_discipline": 0.8333,
+        "semantic_correctness": 1.1667
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "DEVELOPMENT_REGRESSION",
+      "mean_base_total": 5.3333,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 1.6667,
+        "claim_label_consistency": 0.8333,
+        "false_positive_discipline": 0.6667,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "layered-authority-and-request-commitment",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.5,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.6667,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 1.8333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.8333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.0,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 1.5
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 4.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 1.6667,
+        "claim_label_consistency": 0.5,
+        "false_positive_discipline": 0.5,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.8333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.5,
+        "false_positive_discipline": 0.6667,
+        "semantic_correctness": 1.1667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-controller-policy",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.6667,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.6667,
+        "false_positive_discipline": 1.1667,
+        "semantic_correctness": 1.5
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.5,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 1.8333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 4.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.1667,
+        "false_positive_discipline": 0.5,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.3333,
+        "false_positive_discipline": 0.5,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-attribute-direct-effect",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.3333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 1.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.5,
+        "false_positive_discipline": 1.0,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.3333,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 1.5,
+        "false_positive_discipline": 1.0,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 1.1667,
+        "false_positive_discipline": 1.0,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-single-command",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.3333,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.3333,
+        "false_positive_discipline": 1.1667,
+        "semantic_correctness": 1.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.3333,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.5,
+        "false_positive_discipline": 1.5,
+        "semantic_correctness": 1.5
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 1.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.3333,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-commitment-two-commands",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 1.6667,
+        "false_positive_discipline": 1.5,
+        "semantic_correctness": 1.5
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.5,
+        "false_positive_discipline": 1.5,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.5,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.8333,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.0,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 0.8333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-contradiction-unreachable",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.3333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.0,
+        "false_positive_discipline": 1.0,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.5,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.5,
+        "false_positive_discipline": 0.5,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.6667,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 1.5,
+        "false_positive_discipline": 1.5,
+        "semantic_correctness": 1.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.1667,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.6667,
+        "false_positive_discipline": 1.5,
+        "semantic_correctness": 1.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-outside-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.5,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.8333,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 1.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 1.6667,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 4.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 1.6667,
+        "claim_label_consistency": 1.0,
+        "false_positive_discipline": 0.6667,
+        "semantic_correctness": 0.8333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.8333,
+        "false_positive_discipline": 1.0,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-freshness-within-contract",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.3333,
+      "mean_dimensions": {
+        "authority_correctness": 1.1667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.8333,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 1.5
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 6.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 1.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.5,
+        "false_positive_discipline": 0.8333,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 4.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.5,
+        "false_positive_discipline": 0.6667,
+        "semantic_correctness": 1.1667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-exact-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.0,
+        "false_positive_discipline": 0.0,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.0,
+        "false_positive_discipline": 0.0,
+        "semantic_correctness": 1.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.8333,
+        "false_positive_discipline": 1.6667,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 3.5,
+      "mean_dimensions": {
+        "authority_correctness": 0.8333,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 0.1667,
+        "false_positive_discipline": 0.1667,
+        "semantic_correctness": 0.6667
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 4.3333,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 0.3333,
+        "false_positive_discipline": 0.3333,
+        "semantic_correctness": 0.8333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-role-prefix-classifier",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.8333,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.0,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.5,
+        "false_positive_discipline": 1.0,
+        "semantic_correctness": 1.5
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 5.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.5,
+        "false_positive_discipline": 0.8333,
+        "semantic_correctness": 1.3333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 8.0,
+      "mean_dimensions": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "codex"
+    },
+    {
+      "condition": "base-plus-adjudicated-revised",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.1667,
+      "mean_dimensions": {
+        "authority_correctness": 1.1667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.6667,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "generic-security",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 7.8333,
+      "mean_dimensions": {
+        "authority_correctness": 1.8333,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.8333,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "no-skill",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 4.6667,
+      "mean_dimensions": {
+        "authority_correctness": 1.3333,
+        "boundary_correctness": 1.8333,
+        "claim_label_consistency": 0.3333,
+        "false_positive_discipline": 0.6667,
+        "semantic_correctness": 0.8333
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "qwen"
+    },
+    {
+      "condition": "spiffe-spire-base",
+      "corpus_role": "PUBLIC_REGRESSION_V0",
+      "mean_base_total": 4.5,
+      "mean_dimensions": {
+        "authority_correctness": 1.6667,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 0.3333,
+        "false_positive_discipline": 0.3333,
+        "semantic_correctness": 0.5
+      },
+      "response_count": 3,
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "target_configuration_id": "qwen"
+    }
+  ],
+  "schema": "spiffe-spire-agent-evals-case-scores/v1"
+}
