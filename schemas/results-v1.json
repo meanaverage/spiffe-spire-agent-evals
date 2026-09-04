@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/meanaverage/spiffe-spire-agent-evals/blob/v0.1.0/schemas/results-v1.json",
+  "type": "object",
+  "required": ["schema", "score_method", "corpus_accounting", "graders", "inter_rater", "condition_aggregates", "scenario_aggregates"],
+  "properties": {
+    "schema": {"const": "spiffe-spire-agent-evals-scores/v1"},
+    "score_method": {"type": "string"},
+    "corpus_accounting": {"type": "object"},
+    "graders": {"type": "array"},
+    "inter_rater": {"type": "object"},
+    "condition_aggregates": {"type": "array"},
+    "scenario_aggregates": {"type": "array"},
+    "paired_condition_contrasts": {"type": "array"}
+  }
+}

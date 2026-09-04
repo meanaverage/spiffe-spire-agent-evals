@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/meanaverage/spiffe-spire-agent-evals/blob/v0.1.0/schemas/run-manifest-v1.json",
+  "type": "object",
+  "required": ["schema", "result_id", "corpus_version", "scorer_version", "runner_version", "target_generation", "tested_conditions", "graders", "raw_response_policy"],
+  "properties": {
+    "schema": {"const": "spiffe-spire-agent-evals-run-manifest/v1"},
+    "result_id": {"type": "string"},
+    "corpus_version": {"type": "string"},
+    "scorer_version": {"type": "string"},
+    "runner_version": {"type": "string"},
+    "evaluation_date_utc": {"type": "string"},
+    "target_generation": {"type": "object"},
+    "tested_conditions": {"type": "array"},
+    "graders": {"type": "array"},
+    "grader_prompt": {"type": "object"},
+    "grader_disagreement_handling": {"type": "object"},
+    "generic_security_control": {"type": "object"},
+    "transport_and_retry": {"type": "object"},
+    "missing_reproducibility_fields": {"type": "array"},
+    "claim_limits": {"type": "array"},
+    "raw_response_policy": {"const": "PUBLISH_HASHES_AND_SCORES_ONLY"}
+  }
+}

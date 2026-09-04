@@ -1,0 +1,26 @@
+{
+  "controls": [
+    {
+      "condition_id": "NO_SKILL",
+      "content_publication": "NOT_APPLICABLE",
+      "packet_bytes": 0,
+      "packet_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packet_words": 0
+    },
+    {
+      "condition_id": "GENERIC_SECURITY_CONTROL",
+      "composition": "Complete SPIFFE_SPIRE_BASE packet plus a non-SPIFFE-specific generic security-review addition",
+      "content_publication": "DIGEST_AND_METADATA_ONLY",
+      "control_addition_bytes": 12393,
+      "control_addition_license": "NOT_RECORDED",
+      "control_addition_sha256": "a40a05d76f6dbba471e718b9db7c64c5c07870320ec0267f80f9e3f78d210ccc",
+      "control_addition_words": 1673,
+      "packet_bytes": 38319,
+      "packet_sha256": "9414ece31a66af40e8738d2f24ad52924e558140bd5af73827dc275f12f20e35",
+      "packet_words": 4971,
+      "tokenizer_tokens": "NOT_RECORDED",
+      "withholding_reason": "Standalone authorship and license were not recorded in frozen publication evidence."
+    }
+  ],
+  "schema": "spiffe-spire-agent-evals-controls/v1"
+}

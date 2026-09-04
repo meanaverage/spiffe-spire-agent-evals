@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.coverage
+.pytest_cache/
+.venv/
+.runs/
+dist/
+build/
+*.egg-info/
+
+# Raw target/grader output is excluded by publication policy.
+raw-responses/
+raw-grades/
+*.events.jsonl
+*.stderr.log

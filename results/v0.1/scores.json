@@ -1,0 +1,4347 @@
+{
+  "condition_aggregates": [
+    {
+      "base_total_standard_deviation": 1.093,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0833,
+        "codex_judge_rate": 0.5278,
+        "either_grader_rate": 0.5278,
+        "mean_judge_rate": 0.3056,
+        "qwen_judge_rate": 0.0833
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.347,
+        "boundary_correctness": 1.875,
+        "claim_label_consistency": 0.972,
+        "false_positive_discipline": 0.944,
+        "semantic_correctness": 1.167
+      },
+      "mean_base_total": 5.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.1944,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.4306,
+        "qwen_judge_rate": 0.1944
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.381,
+        "codex_judge_rate": 0.381,
+        "either_grader_rate": 0.381,
+        "mean_judge_rate": 0.381,
+        "qwen_judge_rate": 0.381
+      },
+      "provider": "qwen",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.2222,
+        "codex_judge_rate": 0.2222,
+        "either_grader_rate": 0.3056,
+        "mean_judge_rate": 0.2639,
+        "qwen_judge_rate": 0.3056
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.835,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0833,
+        "either_grader_rate": 0.0833,
+        "mean_judge_rate": 0.0417,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.583,
+        "boundary_correctness": 1.958,
+        "claim_label_consistency": 1.778,
+        "false_positive_discipline": 1.722,
+        "semantic_correctness": 1.806
+      },
+      "mean_base_total": 7.069,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.1944,
+        "either_grader_rate": 0.1944,
+        "mean_judge_rate": 0.0972,
+        "qwen_judge_rate": 0.0
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.0476,
+        "codex_judge_rate": 0.0476,
+        "either_grader_rate": 0.0476,
+        "mean_judge_rate": 0.0476,
+        "qwen_judge_rate": 0.0476
+      },
+      "provider": "qwen",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0278,
+        "codex_judge_rate": 0.0278,
+        "either_grader_rate": 0.1111,
+        "mean_judge_rate": 0.0694,
+        "qwen_judge_rate": 0.1111
+      }
+    },
+    {
+      "base_total_standard_deviation": 1.068,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0833,
+        "codex_judge_rate": 0.5556,
+        "either_grader_rate": 0.5556,
+        "mean_judge_rate": 0.3194,
+        "qwen_judge_rate": 0.0833
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.556,
+        "boundary_correctness": 1.972,
+        "claim_label_consistency": 0.972,
+        "false_positive_discipline": 0.944,
+        "semantic_correctness": 1.097
+      },
+      "mean_base_total": 5.569,
+      "overclaim_rate": {
+        "both_graders_rate": 0.2222,
+        "codex_judge_rate": 0.6944,
+        "either_grader_rate": 0.6944,
+        "mean_judge_rate": 0.4583,
+        "qwen_judge_rate": 0.2222
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.381,
+        "codex_judge_rate": 0.381,
+        "either_grader_rate": 0.381,
+        "mean_judge_rate": 0.381,
+        "qwen_judge_rate": 0.381
+      },
+      "provider": "qwen",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.2222,
+        "codex_judge_rate": 0.2222,
+        "either_grader_rate": 0.25,
+        "mean_judge_rate": 0.2361,
+        "qwen_judge_rate": 0.25
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.54,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.1333,
+        "either_grader_rate": 0.1333,
+        "mean_judge_rate": 0.0667,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.639,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.944,
+        "false_positive_discipline": 1.931,
+        "semantic_correctness": 1.931
+      },
+      "mean_base_total": 7.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0556,
+        "either_grader_rate": 0.0556,
+        "mean_judge_rate": 0.0278,
+        "qwen_judge_rate": 0.0
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.971,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0833,
+        "codex_judge_rate": 0.1389,
+        "either_grader_rate": 0.1389,
+        "mean_judge_rate": 0.1111,
+        "qwen_judge_rate": 0.0833
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.986,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.75,
+        "false_positive_discipline": 1.75,
+        "semantic_correctness": 1.861
+      },
+      "mean_base_total": 7.597,
+      "overclaim_rate": {
+        "both_graders_rate": 0.1389,
+        "codex_judge_rate": 0.1389,
+        "either_grader_rate": 0.1389,
+        "mean_judge_rate": 0.1389,
+        "qwen_judge_rate": 0.1389
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.483,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.958,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.972,
+        "false_positive_discipline": 1.931,
+        "semantic_correctness": 1.958
+      },
+      "mean_base_total": 7.847,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0278,
+        "codex_judge_rate": 0.0556,
+        "either_grader_rate": 0.0556,
+        "mean_judge_rate": 0.0417,
+        "qwen_judge_rate": 0.0278
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 1.121,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.2667,
+        "either_grader_rate": 0.2667,
+        "mean_judge_rate": 0.1333,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.1111,
+        "codex_judge_rate": 0.1111,
+        "either_grader_rate": 0.1111,
+        "mean_judge_rate": 0.1111,
+        "qwen_judge_rate": 0.1111
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.944,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 1.708,
+        "false_positive_discipline": 1.542,
+        "semantic_correctness": 1.75
+      },
+      "mean_base_total": 7.236,
+      "overclaim_rate": {
+        "both_graders_rate": 0.1944,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.2639,
+        "qwen_judge_rate": 0.1944
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.115,
+      "benign_false_positive_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "dimension_means": {
+        "authority_correctness": 1.972,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "mean_base_total": 7.972,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "positive_underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 36,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.583,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.2222,
+        "either_grader_rate": 0.2222,
+        "mean_judge_rate": 0.1111,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 1.056,
+        "boundary_correctness": 1.556,
+        "claim_label_consistency": 1.389,
+        "false_positive_discipline": 1.111,
+        "semantic_correctness": 1.056
+      },
+      "mean_base_total": 4.778,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.8889,
+        "either_grader_rate": 0.8889,
+        "mean_judge_rate": 0.4444,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.4444,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.7778,
+        "mean_judge_rate": 0.6111,
+        "qwen_judge_rate": 0.5556
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.749,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 1.611,
+        "boundary_correctness": 1.889,
+        "claim_label_consistency": 1.722,
+        "false_positive_discipline": 1.444,
+        "semantic_correctness": 1.278
+      },
+      "mean_base_total": 6.222,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.5556,
+        "either_grader_rate": 0.5556,
+        "mean_judge_rate": 0.2778,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.2222,
+        "codex_judge_rate": 0.2222,
+        "either_grader_rate": 0.2222,
+        "mean_judge_rate": 0.2222,
+        "qwen_judge_rate": 0.2222
+      }
+    },
+    {
+      "base_total_standard_deviation": 1.181,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.2222,
+        "codex_judge_rate": 0.4444,
+        "either_grader_rate": 0.4444,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.2222
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 1.556,
+        "boundary_correctness": 1.833,
+        "claim_label_consistency": 1.167,
+        "false_positive_discipline": 0.833,
+        "semantic_correctness": 1.0
+      },
+      "mean_base_total": 5.222,
+      "overclaim_rate": {
+        "both_graders_rate": 0.2222,
+        "codex_judge_rate": 0.7778,
+        "either_grader_rate": 0.7778,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.2222
+      },
+      "provider": "qwen",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.2222,
+        "codex_judge_rate": 0.2222,
+        "either_grader_rate": 0.2222,
+        "mean_judge_rate": 0.2222,
+        "qwen_judge_rate": 0.2222
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.875,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 1.833,
+        "boundary_correctness": 1.833,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 1.722,
+        "semantic_correctness": 1.722
+      },
+      "mean_base_total": 7.111,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.2222,
+        "either_grader_rate": 0.2222,
+        "mean_judge_rate": 0.1111,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.598,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 1.722,
+        "boundary_correctness": 1.778,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 1.944
+      },
+      "mean_base_total": 7.444,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.208,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 1.889,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "mean_base_total": 7.889,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.157,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 1.944,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "mean_base_total": 7.944,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "base_total_standard_deviation": 0.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "dimension_means": {
+        "authority_correctness": 2.0,
+        "boundary_correctness": 2.0,
+        "claim_label_consistency": 2.0,
+        "false_positive_discipline": 2.0,
+        "semantic_correctness": 2.0
+      },
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "samples": 9,
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    }
+  ],
+  "corpus_accounting": {
+    "development-regression": 72,
+    "holdout": 288
+  },
+  "graders": [
+    "qwen",
+    "codex"
+  ],
+  "inter_rater": {
+    "dimension_comparisons": 1800,
+    "exact_agreement_rate": 0.8244,
+    "mean_absolute_difference": 0.1878
+  },
+  "paired_condition_contrasts": [
+    {
+      "claim_label_consistency_delta": 0.0,
+      "contrast": "base_minus_no_skill",
+      "control": "no-skill",
+      "corpus": "holdout",
+      "improved_pairs": 16,
+      "mean_base_total_delta": 0.236,
+      "pairs": 36,
+      "provider": "qwen",
+      "regressed_pairs": 10,
+      "tied_pairs": 10,
+      "treatment": "spiffe-spire-base"
+    },
+    {
+      "claim_label_consistency_delta": 0.972,
+      "contrast": "revised_minus_base",
+      "control": "spiffe-spire-base",
+      "corpus": "holdout",
+      "improved_pairs": 33,
+      "mean_base_total_delta": 1.931,
+      "pairs": 36,
+      "provider": "qwen",
+      "regressed_pairs": 1,
+      "tied_pairs": 2,
+      "treatment": "base-plus-adjudicated-revised"
+    },
+    {
+      "claim_label_consistency_delta": 0.167,
+      "contrast": "revised_minus_generic",
+      "control": "generic-security",
+      "corpus": "holdout",
+      "improved_pairs": 19,
+      "mean_base_total_delta": 0.431,
+      "pairs": 36,
+      "provider": "qwen",
+      "regressed_pairs": 11,
+      "tied_pairs": 6,
+      "treatment": "base-plus-adjudicated-revised"
+    },
+    {
+      "claim_label_consistency_delta": -0.042,
+      "contrast": "base_minus_no_skill",
+      "control": "no-skill",
+      "corpus": "holdout",
+      "improved_pairs": 0,
+      "mean_base_total_delta": -0.361,
+      "pairs": 36,
+      "provider": "codex",
+      "regressed_pairs": 10,
+      "tied_pairs": 26,
+      "treatment": "spiffe-spire-base"
+    },
+    {
+      "claim_label_consistency_delta": 0.292,
+      "contrast": "revised_minus_base",
+      "control": "spiffe-spire-base",
+      "corpus": "holdout",
+      "improved_pairs": 15,
+      "mean_base_total_delta": 0.736,
+      "pairs": 36,
+      "provider": "codex",
+      "regressed_pairs": 1,
+      "tied_pairs": 20,
+      "treatment": "base-plus-adjudicated-revised"
+    },
+    {
+      "claim_label_consistency_delta": 0.028,
+      "contrast": "revised_minus_generic",
+      "control": "generic-security",
+      "corpus": "holdout",
+      "improved_pairs": 5,
+      "mean_base_total_delta": 0.125,
+      "pairs": 36,
+      "provider": "codex",
+      "regressed_pairs": 2,
+      "tied_pairs": 29,
+      "treatment": "base-plus-adjudicated-revised"
+    },
+    {
+      "claim_label_consistency_delta": -0.222,
+      "contrast": "base_minus_no_skill",
+      "control": "no-skill",
+      "corpus": "development-regression",
+      "improved_pairs": 6,
+      "mean_base_total_delta": 0.444,
+      "pairs": 9,
+      "provider": "qwen",
+      "regressed_pairs": 2,
+      "tied_pairs": 1,
+      "treatment": "spiffe-spire-base"
+    },
+    {
+      "claim_label_consistency_delta": 0.833,
+      "contrast": "revised_minus_base",
+      "control": "spiffe-spire-base",
+      "corpus": "development-regression",
+      "improved_pairs": 7,
+      "mean_base_total_delta": 1.889,
+      "pairs": 9,
+      "provider": "qwen",
+      "regressed_pairs": 1,
+      "tied_pairs": 1,
+      "treatment": "base-plus-adjudicated-revised"
+    },
+    {
+      "claim_label_consistency_delta": 0.278,
+      "contrast": "revised_minus_generic",
+      "control": "generic-security",
+      "corpus": "development-regression",
+      "improved_pairs": 8,
+      "mean_base_total_delta": 0.889,
+      "pairs": 9,
+      "provider": "qwen",
+      "regressed_pairs": 1,
+      "tied_pairs": 0,
+      "treatment": "base-plus-adjudicated-revised"
+    },
+    {
+      "claim_label_consistency_delta": 0.0,
+      "contrast": "base_minus_no_skill",
+      "control": "no-skill",
+      "corpus": "development-regression",
+      "improved_pairs": 5,
+      "mean_base_total_delta": 0.5,
+      "pairs": 9,
+      "provider": "codex",
+      "regressed_pairs": 0,
+      "tied_pairs": 4,
+      "treatment": "spiffe-spire-base"
+    },
+    {
+      "claim_label_consistency_delta": 0.0,
+      "contrast": "revised_minus_base",
+      "control": "spiffe-spire-base",
+      "corpus": "development-regression",
+      "improved_pairs": 1,
+      "mean_base_total_delta": 0.056,
+      "pairs": 9,
+      "provider": "codex",
+      "regressed_pairs": 0,
+      "tied_pairs": 8,
+      "treatment": "base-plus-adjudicated-revised"
+    },
+    {
+      "claim_label_consistency_delta": 0.0,
+      "contrast": "revised_minus_generic",
+      "control": "generic-security",
+      "corpus": "development-regression",
+      "improved_pairs": 2,
+      "mean_base_total_delta": 0.111,
+      "pairs": 9,
+      "provider": "codex",
+      "regressed_pairs": 0,
+      "tied_pairs": 7,
+      "treatment": "base-plus-adjudicated-revised"
+    }
+  ],
+  "scenario_aggregates": [
+    {
+      "claim_label_consistency": 0.5,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 4.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.5,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.167,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 4.833,
+      "overclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.333,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.0,
+      "overclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.5,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 1.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.5,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 1.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.167,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 1.5,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.6667
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.667,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.5,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.6667
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.833,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.5,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 1.667,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.667,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 4.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.833,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.833,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.5,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.5,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 4.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.833,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.167,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.8333,
+        "qwen_judge_rate": 0.6667
+      },
+      "corpus": "holdout",
+      "mean_base_total": 3.5,
+      "overclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.833,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.333,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.3333
+      },
+      "corpus": "holdout",
+      "mean_base_total": 4.333,
+      "overclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.5,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.5,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.333,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.3333
+      },
+      "corpus": "holdout",
+      "mean_base_total": 4.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.6667
+      }
+    },
+    {
+      "claim_label_consistency": 1.833,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.333,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.8333,
+        "qwen_judge_rate": 0.6667
+      },
+      "corpus": "holdout",
+      "mean_base_total": 4.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.8333,
+        "qwen_judge_rate": 0.6667
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.667,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.667,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-controller-policy",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.667,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.3333
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-attribute-direct-effect",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-single-command",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.333,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-commitment-two-commands",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-demonstrated",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-contradiction-unreachable",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 6.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.6667
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.5,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.5,
+      "overclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-outside-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-freshness-within-contract",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-exact-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.0,
+      "overclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 5.0,
+      "overclaim_rate": {
+        "both_graders_rate": 1.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 1.0,
+        "qwen_judge_rate": 1.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-role-prefix-classifier",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-serialized-reread",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "holdout",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "holdout-toctou-stale-snapshot",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.333,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 5.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.8333,
+        "qwen_judge_rate": 1.0
+      }
+    },
+    {
+      "claim_label_consistency": 1.667,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 6.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 0.667,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.6667
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 4.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.8333,
+        "qwen_judge_rate": 0.6667
+      },
+      "provider": "qwen",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 4.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 6.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 6.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 6.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 0.833,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.1667,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 4.5,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.6667,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.6667,
+        "qwen_judge_rate": 0.6667
+      }
+    },
+    {
+      "claim_label_consistency": 1.5,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 6.167,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 0.833,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.6667,
+        "either_grader_rate": 0.6667,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 5.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 1.0,
+        "either_grader_rate": 1.0,
+        "mean_judge_rate": 0.5,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.3333,
+        "codex_judge_rate": 0.3333,
+        "either_grader_rate": 0.3333,
+        "mean_judge_rate": 0.3333,
+        "qwen_judge_rate": 0.3333
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 7.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "qwen",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "application-authority-composition",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 7.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 7.667,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 7.833,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "identity-evidence-boundary",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "no-skill",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 7.333,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "generic-security",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "spiffe-spire-base",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    },
+    {
+      "claim_label_consistency": 2.0,
+      "condition": "base-plus-adjudicated-revised",
+      "contradictory_label_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "corpus": "development-regression",
+      "mean_base_total": 8.0,
+      "overclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      },
+      "provider": "codex",
+      "scenario_id": "layered-authority-and-request-commitment",
+      "underclaim_rate": {
+        "both_graders_rate": 0.0,
+        "codex_judge_rate": 0.0,
+        "either_grader_rate": 0.0,
+        "mean_judge_rate": 0.0,
+        "qwen_judge_rate": 0.0
+      }
+    }
+  ],
+  "schema": "spiffe-spire-agent-evals-scores/v1",
+  "score_method": "mean of two blinded model graders"
+}

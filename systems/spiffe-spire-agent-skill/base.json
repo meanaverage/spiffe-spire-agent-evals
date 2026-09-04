@@ -1,0 +1,14 @@
+{
+  "delivery_mode": "DETERMINISTIC_SKILL_CONTENT_PACKET",
+  "filesystem_skill_discovery": false,
+  "git_revision": "fbf9d2751a526f4f0ab059fa14facd942571cc5f",
+  "native_skill_loader": false,
+  "packet_bytes": 25863,
+  "packet_sha256": "0de1fe52480b9880135bbfc5fae66a31ad87d6ca81a13422ed3bd4aba9bdf17a",
+  "packet_words": 3295,
+  "progressive_disclosure": false,
+  "routing_tested": false,
+  "source_repository": "https://github.com/meanaverage/spiffe-spire-agent-skill",
+  "system_id": "spiffe-spire-agent-skill-base",
+  "tokenizer_tokens": "NOT_RECORDED"
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/meanaverage/spiffe-spire-agent-evals/blob/v0.1.0/schemas/response-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["summary", "claims", "authorities", "uncertainties"],
+  "properties": {
+    "summary": {"type": "string"},
+    "claims": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["concern", "classification", "boundary", "evidence_present", "evidence_missing", "reasoning"],
+        "properties": {
+          "concern": {"type": "string"},
+          "classification": {"enum": ["non_finding", "suspected", "invariant_violation", "exploitable_vulnerability", "demonstrated_bypass"]},
+          "boundary": {"type": "string"},
+          "evidence_present": {"type": "array", "items": {"type": "string"}},
+          "evidence_missing": {"type": "array", "items": {"type": "string"}},
+          "reasoning": {"type": "string"}
+        }
+      }
+    },
+    "authorities": {"type": "array", "items": {"type": "string"}},
+    "uncertainties": {"type": "array", "items": {"type": "string"}}
+  }
+}

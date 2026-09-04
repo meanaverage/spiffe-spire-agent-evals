@@ -1,0 +1,453 @@
+{
+  "claim_limits": [
+    "Results apply only to the tested model/configuration and corpus.",
+    "The evaluation is not a security certification.",
+    "Completed holdouts become development/public-regression data once disclosed and must not be reused as unseen evidence.",
+    "No statistical claim should exceed what 12 holdout cases, 3 development cases, 3 repetitions, 2 target model configurations, and 2 model graders support.",
+    "Temperature-zero repetitions are observations, not guaranteed independent statistical trials."
+  ],
+  "corpus_version": "0.1.0",
+  "evaluation_date_utc": "2026-09-04",
+  "generic_security_control": {
+    "composition": "The non-SPIFFE generic control text was appended to the exact SPIFFE_SPIRE_BASE packet.",
+    "condition_had_spiffe_specific_material": true,
+    "control_text_bytes": 12393,
+    "control_text_contains_spiffe_specific_material": false,
+    "control_text_path": "WITHHELD_RIGHTS_NOT_ESTABLISHED",
+    "control_text_publication": "DIGEST_AND_METADATA_ONLY",
+    "control_text_sha256": "a40a05d76f6dbba471e718b9db7c64c5c07870320ec0267f80f9e3f78d210ccc",
+    "control_text_token_count": "NOT_RECORDED",
+    "control_text_words": 1673,
+    "license": "NOT_RECORDED",
+    "size_matching": {
+      "combined_generic_packet": {
+        "bytes": 38319,
+        "words": 4971
+      },
+      "difference_words": -75,
+      "generic_addition_words": 1673,
+      "method": "word-count proximity to the pre-tuning adjudicated addition; tokenizer-token matching was not recorded",
+      "post_tuning_note": "The generic control was not re-expanded after the compact PR revision; it was 2051 bytes and 196 words shorter than the revised packet.",
+      "pre_tuning_adjudicated_addition_words": 1748,
+      "pre_tuning_adjudicated_packet": {
+        "bytes": 39562,
+        "words": 5043
+      },
+      "revised_adjudicated_packet": {
+        "bytes": 40370,
+        "words": 5167
+      }
+    }
+  },
+  "grader_disagreement_handling": {
+    "aggregate_score": "The four averaged base dimensions were summed per response, then response totals were arithmetically averaged within each corpus/model/condition cell.",
+    "boolean_flags": "Mean-judge, per-grader, both-grader, and either-grader rates were retained. The headline tables used mean-judge rates; disagreements were not collapsed by majority vote.",
+    "dimension_scores": "For each response and dimension, the two integer scores were averaged with equal weight.",
+    "inter_rater": {
+      "dimension_comparisons": 1800,
+      "exact_agreement_rate": 0.8244,
+      "mean_absolute_difference_on_0_to_2_scale": 0.1878
+    },
+    "manual_or_third_grader_resolution": false
+  },
+  "grader_prompt": {
+    "base_rubric_sha256": "31c5c36861fdd1c789b595ca3f79fe07fc19b8f6aa7808258e1be5b15f02b15e",
+    "batch_count": 30,
+    "codex_combined_stdin_prompt_digest_map_sha256": "c0e7f7a0526af6435c9b314a2afc5a94e810f12db41e0c149c08c2abf4695557",
+    "construction_source": "post_score_harness.py at the frozen scoring-harness SHA-256",
+    "digest_map_canonicalization": "SHA-256 of JSON object mapping batch_id to exact prompt SHA-256, serialized with sorted keys and separators ',' and ':'",
+    "grader_system_prompt": {
+      "bytes": 1462,
+      "sha256": "8c0a448724e4f0927842b355b7f56e11d753d3e779ce00ded15a5049cfe3baae"
+    },
+    "note": "There is no single full grading prompt because scenario and anonymous responses vary by batch. Both graders received semantically identical system, rubric, scenario/answer-key, and anonymous-response material; Qwen received system and user messages separately, while Codex received their concatenation on stdin.",
+    "responses_per_batch": 12,
+    "user_prompt_digest_map_sha256": "71cf0d37e887aba5eb4f4068fbcf63c9ca2d1093ed1ddfc426e162d3edf6d91f"
+  },
+  "graders": [
+    {
+      "artifacts_not_visible": [
+        "private identity mapping",
+        "target provider label",
+        "condition label",
+        "repetition number",
+        "target run identifier",
+        "condition reference packet as a separately labeled artifact"
+      ],
+      "artifacts_visible": [
+        "base scoring rubric",
+        "full scenario including expected conclusions, must_not rules, authority guidance, finding threshold, and expected claim",
+        "12 anonymous target responses from the same scenario",
+        "claim-label vocabulary",
+        "grading output schema"
+      ],
+      "blinding_limits": "Provider, condition, repetition, and run identifier were removed. Response prose could still contain stylistic or reference-content clues.",
+      "effort_level": "NOT_APPLICABLE_OR_NOT_RECORDED",
+      "exact_model_identifier": "qwen38-27b-dflash2",
+      "grading_calls": 30,
+      "grading_prompt_digests": {
+        "per_batch_user_prompt_digest_map_sha256": "71cf0d37e887aba5eb4f4068fbcf63c9ca2d1093ed1ddfc426e162d3edf6d91f",
+        "system_sha256": "8c0a448724e4f0927842b355b7f56e11d753d3e779ce00ded15a5049cfe3baae"
+      },
+      "ground_truth_visible": true,
+      "max_output_tokens": 8000,
+      "model_identity_and_condition_blinded": true,
+      "model_revision_or_weights_hash": "NOT_RECORDED",
+      "other_sampling_settings": "NOT_EXPLICITLY_CONFIGURED; server defaults are UNKNOWN",
+      "provider": "Qwen",
+      "quantization_and_build": "NOT_RECORDED_FOR_GRADER_CALLS",
+      "reasoning_or_thinking": {
+        "api_setting": "chat_template_kwargs.enable_thinking=false",
+        "mode": "no_think",
+        "observed_reasoning_tokens": 0
+      },
+      "request_timeout_seconds": 420,
+      "response_level_grades": 360,
+      "runtime": "OpenAI-compatible chat-completions endpoint; exact grader deployment stack not persisted",
+      "scored_same_model_outputs": {
+        "count": 180,
+        "identity_was_blinded": true,
+        "yes": true
+      },
+      "temperature": 0,
+      "tool_access": "No tools supplied; prompt forbade tools and browsing; observed tool events: 0.",
+      "top_p": "NOT_EXPLICITLY_CONFIGURED",
+      "underlying_model_and_version": "UNKNOWN"
+    },
+    {
+      "artifacts_not_visible": [
+        "private identity mapping",
+        "target provider label",
+        "condition label",
+        "repetition number",
+        "target run identifier",
+        "condition reference packet as a separately labeled artifact"
+      ],
+      "artifacts_visible": [
+        "base scoring rubric",
+        "full scenario including expected conclusions, must_not rules, authority guidance, finding threshold, and expected claim",
+        "12 anonymous target responses from the same scenario",
+        "claim-label vocabulary",
+        "grading output schema"
+      ],
+      "blinding_limits": "Provider, condition, repetition, and run identifier were removed. Response prose could still contain stylistic or reference-content clues.",
+      "effort_level": "medium",
+      "exact_model_identifier": "gpt-5.6-sol",
+      "execution_mode": {
+        "ephemeral": true,
+        "ignore_user_config": true,
+        "ignore_workspace_rules": true,
+        "reasoning_effort": "medium",
+        "sandbox": "read-only",
+        "skip_git_repository_check": true,
+        "working_directory": "new isolated workspace per grading call"
+      },
+      "grading_calls": 30,
+      "grading_prompt_digests": {
+        "per_batch_combined_stdin_prompt_digest_map_sha256": "c0e7f7a0526af6435c9b314a2afc5a94e810f12db41e0c149c08c2abf4695557",
+        "system_sha256": "8c0a448724e4f0927842b355b7f56e11d753d3e779ce00ded15a5049cfe3baae"
+      },
+      "ground_truth_visible": true,
+      "max_output_tokens": "NOT_RECORDED",
+      "model_identity_and_condition_blinded": true,
+      "model_revision_or_weights_hash": "NOT_RECORDED",
+      "other_sampling_settings": "NOT_RECORDED",
+      "provider": "OpenAI",
+      "reasoning_or_thinking": "reasoning enabled",
+      "request_timeout_seconds": 900,
+      "response_level_grades": 360,
+      "runtime": "Codex CLI 0.151.0 using codex exec",
+      "scored_same_model_outputs": {
+        "count": 180,
+        "identity_was_blinded": true,
+        "yes": true
+      },
+      "temperature": "NOT_RECORDED",
+      "tool_access": "Read-only Codex sandbox; prompt forbade tools and browsing; observed tool events: 0.",
+      "top_p": "NOT_RECORDED"
+    }
+  ],
+  "missing_reproducibility_fields": [
+    {
+      "field": "Qwen upstream model identity and immutable weights revision/hash",
+      "impact": "The served alias alone does not uniquely identify the base weights.",
+      "status": "UNKNOWN_OR_NOT_RECORDED"
+    },
+    {
+      "field": "Qwen exact quantization recipe, dflash2 build definition, SGLang version/commit, kernels, drivers, accelerator model, and serving defaults",
+      "impact": "NVFP4, dflash2, and TP2 are known for target calls, but the executable serving stack is not reproducible from those labels alone.",
+      "status": "PARTIALLY_RECORDED"
+    },
+    {
+      "field": "Qwen grader deployment recipe and quantization",
+      "impact": "The grader persisted the served alias but not the deployment metadata.",
+      "status": "NOT_RECORDED"
+    },
+    {
+      "field": "Qwen omitted sampler defaults and inference seed",
+      "impact": "top_p, top_k, and server defaults may affect reproduction even at temperature zero.",
+      "status": "NOT_RECORDED"
+    },
+    {
+      "field": "OpenAI gpt-5.6-sol immutable backend revision/model snapshot",
+      "impact": "The public model name and CLI version do not identify a fixed service-side model snapshot.",
+      "status": "NOT_RECORDED"
+    },
+    {
+      "field": "Codex/OpenAI temperature, top_p, seed, max output tokens, and other backend request defaults",
+      "impact": "The CLI command fixed model and reasoning effort but did not freeze these inference parameters.",
+      "status": "NOT_RECORDED"
+    },
+    {
+      "field": "Actual target and grader worker counts and exact invocation command lines",
+      "impact": "Harness defaults are known, but actual concurrency and any --force invocation cannot be proven from the artifacts.",
+      "status": "NOT_RECORDED"
+    },
+    {
+      "field": "Tokenizer-specific token counts for each condition packet",
+      "impact": "Exact byte and whitespace-word counts are available, but tokenizer-equivalent size matching is not established.",
+      "status": "NOT_RECORDED"
+    },
+    {
+      "field": "Hard network and filesystem isolation attestation for Codex target and grader sessions",
+      "impact": "The prompt prohibition and zero observed tool events are strong behavioral evidence, not a cryptographic access-control proof.",
+      "status": "NOT_RECORDED"
+    },
+    {
+      "field": "Public availability of exact control text, corpora, raw responses, blind batches, grades, and harnesses at the recorded hashes",
+      "impact": "Hashes authenticate artifacts but do not let an external reader reconstruct unpublished bytes.",
+      "status": "REQUIRED_FOR_EXTERNAL_REPRODUCTION"
+    }
+  ],
+  "raw_response_policy": "PUBLISH_HASHES_AND_SCORES_ONLY",
+  "result_id": "2026-09-04-frozen-v1",
+  "runner_version": "0.1.0-public-interface; frozen private harness identified by digest only",
+  "schema": "spiffe-spire-agent-evals-run-manifest/v1",
+  "scorer_version": "0.1.0",
+  "target_generation": {
+    "common": {
+      "answer_key_fields_withheld": [
+        "expected",
+        "must_not",
+        "authority",
+        "finding_threshold",
+        "expected_claims"
+      ],
+      "concurrency": {
+        "actual_workers": "NOT_RECORDED",
+        "materiality_note": "The actual command line was not frozen. Concurrent serving can affect otherwise temperature-zero output.",
+        "target_harness_default_workers": 6
+      },
+      "fresh_request_or_session_per_sample": true,
+      "job_shuffle_seed": 20260904,
+      "observed_tool_events": 0,
+      "repetitions_per_model_condition_case": 3,
+      "response_format": "strict JSON schema",
+      "skill_delivery": {
+        "filesystem_skill_discovery_used": false,
+        "mechanism": "deterministic UTF-8 reference packet concatenated into the user prompt",
+        "native_skill_loader_used": false,
+        "note": "For skill conditions, SKILL.md and every Markdown reference were flattened into one packet and were all visible on every request.",
+        "progressive_disclosure_exercised": false
+      },
+      "target_system_prompt": {
+        "bytes": 648,
+        "identity": "independent security reviewer / schema-only response prompt",
+        "sha256": "d2507e1f5103286932c5ebcd505cce502436481efe8768c26e1e790fe8897204"
+      },
+      "tool_policy_in_prompt": "Do not use tools, browse, inspect files, or assume facts not supplied."
+    },
+    "models": [
+      {
+        "build_or_kernel_tag": "dflash2",
+        "effort_level": "NOT_APPLICABLE_OR_NOT_RECORDED",
+        "exact_served_model_identifier": "qwen38-27b-dflash2",
+        "generated_responses": {
+          "development_regression": 36,
+          "holdout": 144,
+          "total": 180
+        },
+        "max_output_tokens": 1800,
+        "model_revision_or_weights_hash": "NOT_RECORDED",
+        "network_or_web_access": {
+          "available_to_model": false,
+          "explanation": "The request exposed only system/user messages and the response schema; no tool or browsing interface was supplied. The harness itself used a network transport to the inference server."
+        },
+        "other_sampling_settings": "NOT_EXPLICITLY_CONFIGURED; server defaults are UNKNOWN",
+        "provider": "Qwen",
+        "publication_safe_deployment_evidence": "The frozen target deployment recipe encodes SGLang, NVFP4, dflash2, and tensor-parallel degree 2. Its internal run identifier and endpoint are intentionally omitted.",
+        "quantization": "NVFP4",
+        "reasoning_or_thinking": {
+          "api_setting": "chat_template_kwargs.enable_thinking=false",
+          "mode": "no_think",
+          "observed_reasoning_tokens": 0
+        },
+        "request_timeout_seconds": 300,
+        "response_format": "OpenAI-compatible response_format=json_schema with strict=true",
+        "runtime": "self-hosted SGLang serving an OpenAI-compatible chat-completions API",
+        "seed": "NOT_EXPLICITLY_CONFIGURED",
+        "serving_stack_version_or_commit": "NOT_RECORDED",
+        "sessions": "stateless chat-completions request per sample",
+        "temperature": 0,
+        "tensor_parallel_degree": 2,
+        "tool_access": {
+          "observed_tool_events": 0,
+          "tools_supplied_to_model": false
+        },
+        "top_k": "NOT_EXPLICITLY_CONFIGURED",
+        "top_p": "NOT_EXPLICITLY_CONFIGURED",
+        "underlying_model_and_version": "UNKNOWN"
+      },
+      {
+        "effort_level": "medium",
+        "exact_model_identifier": "gpt-5.6-sol",
+        "execution_mode": {
+          "ephemeral": true,
+          "event_output": "JSONL",
+          "ignore_user_config": true,
+          "ignore_workspace_rules": true,
+          "output_schema": "frozen strict JSON schema",
+          "sandbox": "read-only",
+          "skip_git_repository_check": true,
+          "working_directory": "new isolated workspace per sample"
+        },
+        "generated_responses": {
+          "development_regression": 36,
+          "holdout": 144,
+          "total": 180
+        },
+        "max_output_tokens": "NOT_RECORDED",
+        "model_revision_or_weights_hash": "NOT_RECORDED",
+        "network_or_web_access": {
+          "auxiliary_runtime_connections": "Frozen stderr records failed model-catalog/MCP connection attempts; no usable external evidence entered responses.",
+          "browsing_permitted_by_prompt": false,
+          "observed_web_or_tool_events": 0,
+          "sandbox_network_policy": "NOT_RECORDED"
+        },
+        "other_sampling_settings": "NOT_RECORDED",
+        "prompt_transport": "The target system prompt text and user prompt were concatenated and passed on stdin to codex exec.",
+        "provider": "OpenAI",
+        "reasoning_or_thinking": "reasoning enabled",
+        "request_timeout_seconds": 600,
+        "runtime": "Codex CLI 0.151.0 using codex exec",
+        "seed": "NOT_RECORDED",
+        "skill_loading": "No native skill loading. Condition files were concatenated by the harness and injected as prompt context.",
+        "temperature": "NOT_RECORDED",
+        "tool_access": {
+          "observed_tool_events": 0,
+          "prompt_forbade_tools": true,
+          "runtime_tool_registry": "NOT_RECORDED",
+          "sandbox": "read-only"
+        },
+        "top_k": "NOT_RECORDED",
+        "top_p": "NOT_RECORDED"
+      }
+    ]
+  },
+  "tested_conditions": [
+    {
+      "exact_files_loaded": [],
+      "git_revision": "NOT_APPLICABLE",
+      "ground_truth_or_eval_answers_in_context": false,
+      "id": "NO_SKILL",
+      "packet_bytes": 0,
+      "packet_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packet_tokens": "NOT_RECORDED",
+      "packet_words": 0,
+      "progressive_disclosure_references_automatically_available": false
+    },
+    {
+      "exact_files_loaded": [
+        "SKILL.md",
+        "references/attestation-and-registration.md",
+        "references/failure-taxonomy.md",
+        "references/operational-principles.md",
+        "references/rotation-and-bundles.md",
+        "references/source-hierarchy.md",
+        "references/upstream-oracle-navigation.md",
+        "references/version-baseline.md",
+        "references/workflows.md",
+        "references/workload-api-and-mtls.md",
+        "references/generic-evidence-calibrated-review.md (synthetic packet name; source SHA-256 a40a05d76f6dbba471e718b9db7c64c5c07870320ec0267f80f9e3f78d210ccc)"
+      ],
+      "git_revision": "fbf9d2751a526f4f0ab059fa14facd942571cc5f",
+      "ground_truth_or_eval_answers_in_context": false,
+      "id": "GENERIC_SECURITY_CONTROL",
+      "packet_bytes": 38319,
+      "packet_sha256": "9414ece31a66af40e8738d2f24ad52924e558140bd5af73827dc275f12f20e35",
+      "packet_tokens": "NOT_RECORDED",
+      "packet_words": 4971,
+      "progressive_disclosure_references_automatically_available": true,
+      "revision_scope": "SPIFFE/SPIRE base portion; the generic addition is an audit artifact identified by SHA-256, not a repository commit"
+    },
+    {
+      "exact_files_loaded": [
+        "SKILL.md",
+        "references/attestation-and-registration.md",
+        "references/failure-taxonomy.md",
+        "references/operational-principles.md",
+        "references/rotation-and-bundles.md",
+        "references/source-hierarchy.md",
+        "references/upstream-oracle-navigation.md",
+        "references/version-baseline.md",
+        "references/workflows.md",
+        "references/workload-api-and-mtls.md"
+      ],
+      "git_revision": "fbf9d2751a526f4f0ab059fa14facd942571cc5f",
+      "ground_truth_or_eval_answers_in_context": false,
+      "id": "SPIFFE_SPIRE_BASE",
+      "packet_bytes": 25863,
+      "packet_sha256": "0de1fe52480b9880135bbfc5fae66a31ad87d6ca81a13422ed3bd4aba9bdf17a",
+      "packet_tokens": "NOT_RECORDED",
+      "packet_words": 3295,
+      "progressive_disclosure_references_automatically_available": true
+    },
+    {
+      "exact_files_loaded": [
+        "SKILL.md",
+        "references/attestation-and-registration.md",
+        "references/failure-taxonomy.md",
+        "references/operational-principles.md",
+        "references/reviewer-discrimination-rules.md",
+        "references/rotation-and-bundles.md",
+        "references/security-review-invariants.md",
+        "references/source-hierarchy.md",
+        "references/upstream-oracle-navigation.md",
+        "references/version-baseline.md",
+        "references/workflows.md",
+        "references/workload-api-and-mtls.md"
+      ],
+      "git_revision": "569e98164e64c6e1d7632511895e44a4d6e0a641",
+      "ground_truth_or_eval_answers_in_context": false,
+      "id": "BASE_PLUS_ADJUDICATED_REVISED",
+      "packet_bytes": 40370,
+      "packet_sha256": "b7f9787a185c83a595d4573fadd11f4e5bbb8acd8cd59cc071b7e7f65772f651",
+      "packet_tokens": "NOT_RECORDED",
+      "packet_words": 5167,
+      "progressive_disclosure_references_automatically_available": true,
+      "source_file_digests": {
+        "SKILL.md": "8a8dcaff599d8ecdfd6cb7ebffd3caf23bb83fd1a608d3cc789c52821988f4bb",
+        "references/attestation-and-registration.md": "3c55a5642bc2a99e99001b6c4a42f3c4a75eedeb172fde08bdd5d429ffe2f213",
+        "references/failure-taxonomy.md": "73055991bae25b1f858e08341b5863695b6dcb4bb1738c36b47c18e0f298d7ef",
+        "references/operational-principles.md": "7fb9388da0b8bc7fed9d334b24accf217c3440862e5ec8f25ded3bc43b83a0cd",
+        "references/reviewer-discrimination-rules.md": "cb15c3b95fefc6f719631044db76f57b490230dc5b68082874afd76364873b31",
+        "references/rotation-and-bundles.md": "4ed4bbd472452cee1ec581cc661441a1dcadf55ef4d4ea89850d67c022832855",
+        "references/security-review-invariants.md": "d5d0694201ae23c7b97ab2e04eeb136d29707e26e136286800b71b488b1c5bd7",
+        "references/source-hierarchy.md": "b33f000009954330900ae433e8a8523ef7a4a34b0f627ce494c46df7000b1b2c",
+        "references/upstream-oracle-navigation.md": "32e588d8f11141e36e56183365148732e53576178fc152c150987630b372a3ce",
+        "references/version-baseline.md": "266376a85d82b0ff8c3fb85d26229639c4133eb920637d12a1b596c0f18ac15d",
+        "references/workflows.md": "6106ad6e7d90b6d2d420d5d16f3d7809ab619aec1a22fff88ec7fd1370215a13",
+        "references/workload-api-and-mtls.md": "5b7a5151334b267e6355eefc218ec166227fd7f048ac2180b4b50f3621f72bb6"
+      }
+    }
+  ],
+  "transport_and_retry": {
+    "automatic_request_retries": false,
+    "limitation": "The actual invocation log and --force history were not frozen, so a successful manual re-execution that left no distinct failure artifact cannot be excluded.",
+    "observable_retries": 0,
+    "retained_error_files": 0,
+    "retained_grader_transport_failures": 0,
+    "retained_target_transport_failures": 0,
+    "retry_rule": "No automatic target or grading retry is implemented. Existing successful result files are reused unless --force is supplied. A failed attempt would leave error.json and could be invoked again manually."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "corpus_version": "0.1.0",
+  "delivery_mode": "NO_SKILL",
+  "effort_level": "NOT_APPLICABLE",
+  "immutable_model_revision": "UNKNOWN",
+  "max_output_tokens": "NOT_RECORDED",
+  "model_identifier": "example-model-alias",
+  "provider_runtime": "local-command-adapter",
+  "quantization": "NOT_APPLICABLE",
+  "reasoning_or_thinking": "NOT_RECORDED",
+  "runner_version": "0.1.0",
+  "sampling": {
+    "seed": "NOT_RECORDED",
+    "temperature": "NOT_RECORDED",
+    "top_p": "NOT_RECORDED"
+  },
+  "scorer_version": "0.1.0",
+  "tool_browser_access": "NOT_RECORDED"
+}

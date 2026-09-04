@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/meanaverage/spiffe-spire-agent-evals/blob/v0.1.0/schemas/grade-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["grades", "grader_notes"],
+  "properties": {
+    "grades": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["blind_id", "semantic_correctness", "authority_correctness", "boundary_correctness", "false_positive_discipline", "claim_label_consistency", "overclaim", "underclaim", "contradictory_label", "must_not_violations", "rationale"],
+        "properties": {
+          "blind_id": {"type": "string"},
+          "semantic_correctness": {"type": "integer", "minimum": 0, "maximum": 2},
+          "authority_correctness": {"type": "integer", "minimum": 0, "maximum": 2},
+          "boundary_correctness": {"type": "integer", "minimum": 0, "maximum": 2},
+          "false_positive_discipline": {"type": "integer", "minimum": 0, "maximum": 2},
+          "claim_label_consistency": {"type": "integer", "minimum": 0, "maximum": 2},
+          "overclaim": {"type": "boolean"},
+          "underclaim": {"type": "boolean"},
+          "contradictory_label": {"type": "boolean"},
+          "must_not_violations": {"type": "array", "items": {"type": "string"}},
+          "rationale": {"type": "string"}
+        }
+      }
+    },
+    "grader_notes": {"type": "array", "items": {"type": "string"}}
+  }
+}
