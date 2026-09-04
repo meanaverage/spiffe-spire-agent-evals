@@ -1,0 +1,246 @@
+{
+  "corpus_version": "0.1.0",
+  "file_count": 59,
+  "files": [
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "6678612d936a62c57116bcdd81f802a2c5db05bf6ff431b0573147b5f7b545e4"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "298323c8b23dc8e7ae3fca75b7fd9433fb842a3abe3db03c1e934118cbc3af3b"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "7d5567333c09da5f78bb93573bee257af6fc54cae1465d8312a3473fc049e72b"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "e15ee32d76363d3bb763a1c395a8de6910844c64ba5178c09e7b65a1db256df3"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "5633d48f1b0c9f2f6d2163f776a1b018148af52bd2a658236f651569333cc6f0"
+    },
+    {
+      "path": "README.md",
+      "sha256": "ce0b8c7b774ad314f4f2b6a4c1c1fbbee78dc5fb7a890f1eac12ae48938109e9"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "737a40c1605b775e33fb37b41e7a1219f826f95d8ee3de0606deecd6c6a82c55"
+    },
+    {
+      "path": "controls/controls.json",
+      "sha256": "ca538a9fbf304cf5e9357e9f6e0574d5b0bec86d0069def9cb071d3b8f67918a"
+    },
+    {
+      "path": "corpus/public-regression/0.1.0/contrastive.json",
+      "sha256": "407f8309f4d515560327ed11f0a383abba913a9635b2ea67f45ba4d63f2d4bcf"
+    },
+    {
+      "path": "corpus/public-regression/0.1.0/development-regression.json",
+      "sha256": "f29c0d11b58e52bd6245267b79e09414a4bbc443332eac3f47a17afabf8467a1"
+    },
+    {
+      "path": "corpus/public-regression/0.1.0/pair-integrity.json",
+      "sha256": "1b7b29882d938d3f1e9cd7c4bf7edb0d56bf6808add64d729a4375db7877342f"
+    },
+    {
+      "path": "corpus/public-regression/0.1.0/role-history.json",
+      "sha256": "53a7f09b9d7b2889027b690ea347fc5a0bc38beaaec982c25779d556a71aec63"
+    },
+    {
+      "path": "corpus/public-regression/0.1.0/upstream.json",
+      "sha256": "de073088150ea8b23db51c83a92c2644305d57e95a99eea1f6b1138a50f37405"
+    },
+    {
+      "path": "docs/governance.md",
+      "sha256": "3060365086b8432d9b00c37083add0bce5ceca606c8500a949f2a816758129f8"
+    },
+    {
+      "path": "docs/holdout-policy.md",
+      "sha256": "3161757716cec1cb1471b74b3bb1537a2a2c7da8be235b20692736fe9498736b"
+    },
+    {
+      "path": "docs/independence.md",
+      "sha256": "2fb26d235595c71d3afceb813561610671b22482a19b6d35389d6cb5c0aaa3c5"
+    },
+    {
+      "path": "docs/methodology.md",
+      "sha256": "40a030f223930f5d495377902378c840e01986558c348059fa7a01ed74d24d1c"
+    },
+    {
+      "path": "docs/model-reporting.md",
+      "sha256": "918813d95b8ed5627b0beb2ca20e968232b7191f9fd5bf862c7ead869cae36ba"
+    },
+    {
+      "path": "docs/provenance-policy.md",
+      "sha256": "b5f25837cfffc3d7f9f8defe8ba4bf713b5b4a85ae7d8944cf6814c9078cf00f"
+    },
+    {
+      "path": "docs/reproduction.md",
+      "sha256": "1b63f5190dbda7fccf98c42aa0dc30669cab61ace3b960a18dffa40d92279fad"
+    },
+    {
+      "path": "docs/result-reporting.md",
+      "sha256": "cfa35d50281e790c1fab74883cf1c43c67e58dad3d86b2491bfb1abd0eb21033"
+    },
+    {
+      "path": "docs/scoring.md",
+      "sha256": "7ef211a926173b2085dad70859be581d355798dace63144b5cb2f475582880bc"
+    },
+    {
+      "path": "docs/security-and-privacy.md",
+      "sha256": "44172b027a7d34f550fa3ffa1820ed942e870cbdc5fa1457caf0b46927a1bf7f"
+    },
+    {
+      "path": "examples/model-config.example.json",
+      "sha256": "dd88c458e288371fc21e69ae76d6e63978d349b3204c5dc72d4b400dff20a681"
+    },
+    {
+      "path": "prompts/prompts.json",
+      "sha256": "14e3884def34ef2efbf54da970ffa445b722d0fc81d4e14fd79032753b037860"
+    },
+    {
+      "path": "provenance/cases.json",
+      "sha256": "37ffc5dc13ead55db4bf8dddb2e67cccb4ebd67b4c0a77a65781352293f8de82"
+    },
+    {
+      "path": "provenance/sources.json",
+      "sha256": "3d48b0c974a207757e0efe162828b84ce26c5ec572ef6f145cae598989e9e4cc"
+    },
+    {
+      "path": "provenance/verify_sources.py",
+      "sha256": "35289a0e67fc845500783825cbb517071f77d3811c10f8db41317060ac4631c0"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "a02187ff2f32f682e5289a7d2ca499366dedcc3447795850827fd06abd170c3e"
+    },
+    {
+      "path": "results/v0.1/README.md",
+      "sha256": "2325663351752e996cb256fe0bcc54c4371ffb5401574811e2b893aae54ab2f2"
+    },
+    {
+      "path": "results/v0.1/case-scores.json",
+      "sha256": "160690fb5ba5f6721905144e6b0ea5808e6f4fabf1ce1e340b96ad8cd4977d12"
+    },
+    {
+      "path": "results/v0.1/grades.numeric.json",
+      "sha256": "3859fa9561ddcbb8adff6c9793cc02d5c26f6451f00db3fbdf00bb321b27345b"
+    },
+    {
+      "path": "results/v0.1/report.md",
+      "sha256": "5ae0835d9fae1ad2cc8642fc552987636545970d3b1469ed174062f454dbe271"
+    },
+    {
+      "path": "results/v0.1/response-hashes.json",
+      "sha256": "bcd6086491d31126e8b6a573d7fb62b7cf23de6721fc7993787b0b7abf19ecff"
+    },
+    {
+      "path": "results/v0.1/run-manifest.json",
+      "sha256": "88001c43986589b95b794f1205ace9f3c16cae12dac29cfc3eac1648a82003f8"
+    },
+    {
+      "path": "results/v0.1/scores.json",
+      "sha256": "b5dad7322a1fb66b20814cbb848507829679f245509f87c51bcfaaa360ffcfaf"
+    },
+    {
+      "path": "results/v0.1/validation.json",
+      "sha256": "c736dcb5767ce4e1c6fd7622d5983e7d78ba29aaaccca8d5cfd5abaf77a2b7bd"
+    },
+    {
+      "path": "runner/README.md",
+      "sha256": "323e647031d28d1818efc873d5bbbb080f9a1f408fd6ab147148aa8a8689fa64"
+    },
+    {
+      "path": "runner/__init__.py",
+      "sha256": "e1f55e117c4df030ce248a522da155ca3e04a4d3c06d151f4a12ce6fd662a89c"
+    },
+    {
+      "path": "runner/adapters/__init__.py",
+      "sha256": "6cbb368764c84d98611627490dcded96a4a568661b7ecf123ad418450b073ee8"
+    },
+    {
+      "path": "runner/adapters/command.py",
+      "sha256": "650c10121cfdd00263343351fe3b008309b98df6d17cb20cb7890cb689f4e6f0"
+    },
+    {
+      "path": "runner/cli.py",
+      "sha256": "b08dbf866920c94cd282c3192b85451f08b01d8e5a43f6b95f3a1168edbddf94"
+    },
+    {
+      "path": "runner/core.py",
+      "sha256": "5f8ee96cc22acc0f026433b6e32ec9ddb5e453c867f9cb8a264452e7bf79759a"
+    },
+    {
+      "path": "runner/protocol.py",
+      "sha256": "ef70b231168a8cf0ac7bb179f08eaa2327c69ac0d8ca98a144bdc2f7b16b242a"
+    },
+    {
+      "path": "schemas/case-v1.json",
+      "sha256": "d3faa855c5513b03ca2119eb4f73ad8d597b04b85909ac68ac30cae5542d39b1"
+    },
+    {
+      "path": "schemas/grade-v1.json",
+      "sha256": "f2344525e3bd326d6c759244a80b24f9889520f229b1a6f3c8fb18c118ff95c9"
+    },
+    {
+      "path": "schemas/response-v1.json",
+      "sha256": "20a51170a96eac61401d71682d3c46c325bf1989eb82c23a9ebffb46eb95e140"
+    },
+    {
+      "path": "schemas/results-v1.json",
+      "sha256": "105dddfeecf78a8193b7ffefff3a8f21a3781c00f18621fabe997b18b69f45f6"
+    },
+    {
+      "path": "schemas/run-manifest-v1.json",
+      "sha256": "0b51478c7c9985a54e3f7b57b614e3d3ad229ea5b4b48694afb02e8ac5f6e8d4"
+    },
+    {
+      "path": "scoring/__init__.py",
+      "sha256": "bfdbcee64f33b9a665ad01ff4c5f0ac45b4470a4422a2333bac2fa8ca3e18b8e"
+    },
+    {
+      "path": "scoring/aggregate.py",
+      "sha256": "7b09d04505828de7b3d737df31bb4a22db66d19fb1d0959f35521e020dbeb6ff"
+    },
+    {
+      "path": "scoring/validate.py",
+      "sha256": "80b54399d3e2e729063a76b7c699a853307b59f5e074c947a5b427d380e10c28"
+    },
+    {
+      "path": "systems/README.md",
+      "sha256": "0e33b16e37eb626b603cc5f2afd6b6c8be682ec5bcacffc550b786796a54f9c6"
+    },
+    {
+      "path": "systems/spiffe-spire-agent-skill/adjudicated-revised.json",
+      "sha256": "3744bdb073f9baaf3113c232000b27f9b6d828763f474b4dae84bad662b4ceed"
+    },
+    {
+      "path": "systems/spiffe-spire-agent-skill/base.json",
+      "sha256": "076f62e3df09c72e00e8bb028aac52fa8a5bc8bdbf8f6d87dd9e69499d50cdce"
+    },
+    {
+      "path": "tests/test_publication.py",
+      "sha256": "3061f82be18b8d5dc86488df37c292c50ca3fe10b7c43d261f6329433fa523eb"
+    },
+    {
+      "path": "tools/freeze_release.py",
+      "sha256": "01beded8ef5407b429736fcdddd705085ac7b5e8df9bcc25ecd9f3e0cbf9f4f7"
+    },
+    {
+      "path": "tools/import_frozen.py",
+      "sha256": "96af6440f138cdaa0f4b1e52831873df77b1ab37972e3fa0596881e885f26248"
+    }
+  ],
+  "release": "v0.1.0",
+  "runner_version": "0.1.0",
+  "schema": "spiffe-spire-agent-evals-release-manifest/v1",
+  "scorer_version": "0.1.0"
+}
